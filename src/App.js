@@ -1,8 +1,17 @@
+import Banner from './component/Banner/Banner'
+import styled from 'styled-components';
+const TotalPage = styled.div`
+  width : 100vw;
+  height : 100vh;
+  display : flex;
+  // flex-direction : row;
+  justify-content : center;
+`
 function App() {
   return (
-    <div>
-      한강 메인페이지 반응형
-    </div>
+    <TotalPage>
+      <Banner/>
+    </TotalPage>
   );
 }
 
