@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 export const CurrentLectureWrapper = styled.div`
-    width : 400px;
-    height : 350px;
+    width : 300px;
+    height : 360px;
 `
 export const LectureList = styled.ul`
     width : 272px;
     height : 276px;
     display : flex;
     flex-direction : column;
-    padding : 0px 12px;
-    justify-content : space-around;
+    margin : 0 auto;
+    padding : 0 20px 24px 20px;
     list-style : none;
     border-radius : 8px;
     border : solid 1px #eeeeee;
@@ -21,6 +21,7 @@ export const LectureNameAndProfessor = styled.div`
 `
 export const Lecture = styled.li`
     display : flex;
+    padding : 20px 12px;
     justify-content : space-between;
     align-items : center;
     font-size : 14px;

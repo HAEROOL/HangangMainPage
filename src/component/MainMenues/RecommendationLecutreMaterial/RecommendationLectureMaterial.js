@@ -8,11 +8,7 @@ function RecommendationMaterial(){
                 추천강의자료
             </ComponentName>
             <LectureMaterial>
-                <FirstMaterial></FirstMaterial>
-                <SecondMaterial></SecondMaterial>
-                <ThirdMaterial></ThirdMaterial>
-                <FourthMaterial></FourthMaterial>
-                <FifthMaterial></FifthMaterial>
+                시간표를 작성하지 않았거나 업로드된 강의자료가 없습니다.
             </LectureMaterial>
         </ LectureMaterialWrapper>
     )

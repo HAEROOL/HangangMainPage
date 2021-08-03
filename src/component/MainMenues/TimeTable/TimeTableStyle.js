@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const TimeTableWrapper = styled.div`
-    width : 370px;
-    height : 310px;
+    width : 368px;
+    height : 360px;
 `
 export const LectureList = styled.ul`
     width : 368px;
     height : 276px;
     margin : 0 auto;
-    padding : 20px 24px;
+    padding : 0 20px 24px 20px;
     list-style : none;
     border-radius : 8px;
     border : solid 1px #eeeeee;

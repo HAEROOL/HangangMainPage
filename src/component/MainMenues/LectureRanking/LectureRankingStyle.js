@@ -1,5 +1,10 @@
 import styled from 'styled-components'
+
 export const LectureRankingWrapper = styled.div`
+    width : 470px;
+    height : 450px;
+`
+export const RankingWrapper = styled.div`
     width : 464px;
     height : 396px;
     border-radius : 8px;
