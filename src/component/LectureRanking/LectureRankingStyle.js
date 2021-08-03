@@ -1,10 +1,13 @@
 import styled from 'styled-components'
-
 export const LectureRankingWrapper = styled.div`
     width : 464px;
     height : 396px;
     border-radius : 8px;
     border : solid 1px #eeeeee;
+`
+export const ComponentName = styled.div`
+    font-size : 16px;
+    margin-bottom : 16px;
 `
 export const DepartmentSelector = styled.ul`
     display : flex;
