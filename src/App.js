@@ -1,5 +1,5 @@
 import Banner from './component/Banner/Banner'
-import Department from './component/Department/Department'
+import DepartmentBrowser from './component/Department/Department'
 import styled from 'styled-components';
 const TotalPage = styled.div`
   width : 100vw;
@@ -12,7 +12,7 @@ function App() {
   return (
     <TotalPage>
       <Banner/>
-      <Department/>
+      <DepartmentBrowser/>
     </TotalPage>
   );
 }

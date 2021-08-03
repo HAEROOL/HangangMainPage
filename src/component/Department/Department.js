@@ -1,23 +1,31 @@
 import React from 'react'
-import { DepartmentImages, DepartmentWrapper } from './DepartmentStyle'
-import Elective from '../../assets/images/Department/Elective.png'
-import HRD from '../../assets/images/Department/HRD.png'
-import MechanialEngineerging from '../../assets/images/Department/MechanicalEngineering.png'
-import DesignArchitecturalEngineering from '../../assets/images/Department/DesignArchitecturalEngineering.png'
-import MechatronicsEngineering from '../../assets/images/Department/MechatronicsEngineering.png'
-import IndustrialManagement from '../../assets/images/Department/IndustrialManagement.png'
-import EnergyNewMaterialsChemicalEngineering from '../../assets/images/Department/EnergyNewMaterialsChemicalEngineering.png'
-import ElectricalElectronicCommunication from '../../assets/images/Department/ElectricalElectronicCommunication.png'
-import ComputerEngineering from '../../assets/images/Department/ComputerEngineering.png'
-import Fusion from '../../assets/images/Department/Fusion.png'
+import { DepartmentImages, DepartmentBrowserWrapper,DepartmentListWrapper, Department, DepartmentName, ComponentName } from './DepartmentStyle'
+import Elective from '../../assets/images/Department/Elective.jpg'
+import HRD from '../../assets/images/Department/HRD.jpg'
+import MechanialEngineerging from '../../assets/images/Department/MechanicalEngineering.jpg'
+import DesignArchitecturalEngineering from '../../assets/images/Department/DesignArchitecturalEngineering.jpg'
+import MechatronicsEngineering from '../../assets/images/Department/MechatronicsEngineering.jpg'
+import IndustrialManagement from '../../assets/images/Department/IndustrialManagement.jpg'
+import EnergyNewMaterialsChemicalEngineering from '../../assets/images/Department/EnergyNewMaterialsChemicalEngineering.jpg'
+import ElectricalElectronicCommunication from '../../assets/images/Department/ElectricalElectronicCommunication.jpg'
+import ComputerEngineering from '../../assets/images/Department/ComputerEngineering.jpg'
+import Fusion from '../../assets/images/Department/Fusion.jpg'
 const DepartmentList = [Elective, HRD, MechanialEngineerging,DesignArchitecturalEngineering, MechatronicsEngineering, IndustrialManagement, EnergyNewMaterialsChemicalEngineering, ElectricalElectronicCommunication, ComputerEngineering, Fusion]
-function Department(){
+const DepartmentNameList = ['교양학부','HRD학부','기계공학부','디자인 건축'+'\n'+'공학부','메카트로닉스\n공학부','산업경영학부','에너지신소재\n화학 공학부','전기전자통\n 공학부','컴퓨터공학부','융합학과']
+function DepartmentBrowser(){
     return (
-        <DepartmentWrapper>
-            {DepartmentList.map((department,index) => <DepartmentImages key={index} alt={department} src={department}/>)}
-        </DepartmentWrapper>
-        
+        <DepartmentBrowserWrapper>
+            <ComponentName>학부별 탐색</ComponentName>
+            <DepartmentListWrapper>
+                    {DepartmentList.map((department,index) =>
+                        <Department>
+                            <DepartmentImages key={index} alt={department} src={department}/>
+                            <DepartmentName>{DepartmentNameList[DepartmentList.indexOf(department)]}</DepartmentName>
+                        </Department>
+                    )}
+            </DepartmentListWrapper>
+        </DepartmentBrowserWrapper>
     )
 }
 
-export default Department
+export default DepartmentBrowser
