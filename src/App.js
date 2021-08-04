@@ -1,4 +1,5 @@
 import Banner from './component/Banner/Banner'
+import DepartmentBrowser from './component/Department/Department'
 import styled from 'styled-components';
 import MainPageIllust from './component/Banner/MainPageIllust';
 const TotalPage = styled.div`
