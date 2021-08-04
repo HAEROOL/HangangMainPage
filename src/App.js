@@ -1,18 +1,20 @@
 import Banner from './component/Banner/Banner'
+import DepartmentBrowser from './component/Department/Department'
 import styled from 'styled-components';
-import MainPageFooter from './component/Footer/MainPageFooter';
+import MainPageIllust from './component/Banner/MainPageIllust';
 const TotalPage = styled.div`
   width : 100vw;
   height : 100vh;
   display : flex;
   flex-direction : column;
-  justify-content : center;
+  // justify-content : center;
+  align-items : center;
 `
 function App() {
   return (
     <TotalPage>
       <Banner/>
-      <MainPageFooter/>
+      <MainPageIllust/>
     </TotalPage>
   );
 }
