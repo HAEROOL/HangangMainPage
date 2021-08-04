@@ -15,7 +15,6 @@ export const Department = styled.a`
     width : 100px;
     object-fit: contain;
     font-size : 12px;
-    background : yellow;
 `
 export const DepartmentImages = styled.img`
     cursor : pointer;
