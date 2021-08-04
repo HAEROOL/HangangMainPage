@@ -1,18 +1,17 @@
 import styled from "styled-components";
 export const DepartmentBrowserWrapper = styled.div`
-
+    width : 1135px;
+    height : 120px;
+    margin : 0 auto;
+    margin-bottom : 32px;
 `
 export const DepartmentListWrapper = styled.div`
-    width : 1135px;
     display : flex;
-    flex-direction : row;
     justify-content : space-between;
 `
 export const Department = styled.a`
     position : relative;
     text-align : center;
-    height : 87px;
-    width : 100px;
     object-fit: contain;
     font-size : 12px;
 `

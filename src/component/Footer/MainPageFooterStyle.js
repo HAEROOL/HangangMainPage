@@ -24,6 +24,7 @@ export const HangangMenuWrapper = styled.div`
 export const HangangMenu = styled.a`
     color : #ffffff;
     font-size : 15px;
+    cursor : pointer;
 `
 
 export const FooterMenuWrapper = styled.div`
@@ -41,11 +42,13 @@ export const FooterMenu = styled.a`
     padding 3px 6px;
     border-radius : 20px;
     border : 1px solid #9fa9b3;
+    cursor : pointer;
 `
 export const Logos = styled.a`
     display : flex;
     width : 72px;
     justify-content : space-between;
+    cursor : pointer;
 `
 export const LogosMenuContainer = styled.div`
     display : flex;

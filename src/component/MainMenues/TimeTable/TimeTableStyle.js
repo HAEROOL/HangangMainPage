@@ -5,7 +5,7 @@ export const TimeTableWrapper = styled.div`
     height : 360px;
 `
 export const LectureList = styled.ul`
-    width : 368px;
+    width : 328px;
     height : 276px;
     margin : 0 auto;
     padding : 0 20px 24px 20px;

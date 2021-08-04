@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 export const PageHeader = styled.header`
-    width : 100vw;
+    width : 1135px;
     height : 79px;
     display : flex;
     justify-content : center;
     border-bottom : solid 1px #eeeeee;
+    margin : 0 auto;
 `
 export const MenuWrapper = styled.nav`
     width : 1135px;
     height : 79px;
     display : flex;
-    flex-direction : row;
     align-items : center;
     justify-content : space-between;
     text-align : center;

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const CurrentLectureWrapper = styled.div`
-    width : 300px;
+    width : 272px;
     height : 360px;
 `
 export const LectureList = styled.ul`
-    width : 272px;
+    width : 232px;
     height : 276px;
     display : flex;
     flex-direction : column;
