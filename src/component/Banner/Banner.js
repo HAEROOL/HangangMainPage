@@ -11,7 +11,7 @@ function Banner(){
         <PageHeader>
             <MenuWrapper>
                 <MainMenuWrapper>
-                    <MainMenu><HangangLogo/></MainMenu>
+                    <HangangLogo/>
                     {menuList.map((menu,index) => <MainMenu key={index} onClick={(e) => ClickMainMenu(e)} isClicked={nowPage===menuList.indexOf(menu)?true:false}>{menu}</MainMenu>)}
                 </MainMenuWrapper>
                 <LoginMenuWrapper>
