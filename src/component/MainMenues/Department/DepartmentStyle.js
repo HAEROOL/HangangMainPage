@@ -5,35 +5,19 @@ export const DepartmentBrowserWrapper = styled.div`
     margin : 0 auto;
     margin-bottom : 32px;
     @media screen and (max-width : 574px){
-        width : 570px;
-        height : 190px;
-        margin : 0 auto;
-    }
-`
-export const Scroll = styled.div`
-    @media screen and (max-width : 574px){
         width : 574px;
-        height : 180px;
-        overflow-x : scroll;
+        overflow : auto;
     }
 `
 export const DepartmentListWrapper = styled.div`
     display : flex;
     justify-content : space-between;
-    @media screen and (max-width : 574px){
-        width : 1502px;
-        height : 139px;
-        margin : 0 15px;
-    }
 `
 export const Department = styled.a`
     position : relative;
     text-align : center;
     object-fit: contain;
     font-size : 12px;
-    @media screen and (max-width : 574px){
-        font-size : 20px;
-    }
 `
 export const DepartmentImages = styled.img`
     cursor : pointer;
@@ -54,7 +38,4 @@ export const ComponentName = styled.div`
     font-size : 16px;
     text-align : left;
     margin-bottom : 16px;
-    @media screen and (max-width : 574px){
-        font-size : 26px;
-    }
 `

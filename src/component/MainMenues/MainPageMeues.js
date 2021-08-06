@@ -19,9 +19,6 @@ function MainPageMenu(){
             <FourthMaterial>
                 <CurrentLecture/>
             </FourthMaterial>
-            
-            
-            
         </MainPageMenuWrapper>
     )
 }

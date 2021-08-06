@@ -7,6 +7,9 @@ export const PageHeader = styled.header`
     justify-content : center;
     border-bottom : solid 1px #eeeeee;
     margin : 0 auto;
+    @media screen and (max-width:600px){
+        border-bottom : None;
+    }
 `
 export const MenuWrapper = styled.nav`
     width : 1135px;
@@ -20,7 +23,6 @@ export const MainMenuWrapper = styled.div`
     width : 560px;
     height : 79px;
     display : flex;
-    flex-direction : row;
     justify-content : space-between;
     align-items : center;
 `
@@ -42,7 +44,10 @@ export const MainMenu = styled.div`
     :hover{
         cursor : pointer;
     }
-    border-bottom : ${props=>props.isClicked?'#238bfe 2px solid;':''} 
+    border-bottom : ${props=>props.isClicked?'#238bfe 2px solid;':''};
+    @media screen and (max-width:600px){
+        display : None;
+    }
 `
 
 export const LoginMenu = styled.div`
@@ -55,5 +60,8 @@ export const LoginMenu = styled.div`
     font-size : 17px;
     :hover{
         cursor : pointer;
+    }
+    @media screen and (max-width:600px){
+        display : None;
     }
 `

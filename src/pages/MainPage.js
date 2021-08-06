@@ -8,15 +8,16 @@ const MainPageWrapper = styled.div`
     display : flex;
     flex-direction : column;
     width : 100vw;
+    margin : 0 auto;
     align-items : center;
     justify-content : center;
 `
 function MainPage(){
     return(
         <MainPageWrapper>
-            <MainPageIllust/>
+            {/* <MainPageIllust/> */}
             <DepartmentBrowser/>
-            <MainPageMenues/>
+            {/* <MainPageMenues/> */}
         </MainPageWrapper>
     )
 }
