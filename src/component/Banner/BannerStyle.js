@@ -7,6 +7,9 @@ export const PageHeader = styled.header`
     justify-content : center;
     border-bottom : solid 1px #eeeeee;
     margin : 0 auto;
+    @media screen and (max-width:600px){
+        border-bottom : None;
+    }
 `
 export const MenuWrapper = styled.nav`
     width : 1135px;
