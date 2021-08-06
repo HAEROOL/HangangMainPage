@@ -4,6 +4,9 @@ export const MainPageFooterWrapper = styled.div`
     width : 100vw;
     height : 203px;
     background : #3e3e3e;
+    @media screen and (max-width : 600px){
+        display : None;
+    }
 `
 export const FooterContentsWrapper = styled.div`
     display : flex;
@@ -14,6 +17,7 @@ export const FooterContentsWrapper = styled.div`
     width : 1280px;
     height : 203px;
     background : #3e3e3e;
+
 `
 export const HangangMenuWrapper = styled.div`
     width : 295px;
