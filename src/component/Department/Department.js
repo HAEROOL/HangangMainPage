@@ -1,5 +1,5 @@
 import React from 'react'
-import { DepartmentImages, DepartmentBrowserWrapper,DepartmentListWrapper, Department, DepartmentName, ComponentName } from './DepartmentStyle'
+import { DepartmentImages, DepartmentBrowserWrapper,DepartmentListWrapper, Department, DepartmentName, ComponentName, Scroll } from './DepartmentStyle'
 import Elective from '../../assets/images/Department/Elective.jpg'
 import HRD from '../../assets/images/Department/HRD.jpg'
 import MechanialEngineerging from '../../assets/images/Department/MechanicalEngineering.jpg'
@@ -16,6 +16,7 @@ function DepartmentBrowser(){
     return (
         <DepartmentBrowserWrapper>
             <ComponentName>학부별 탐색</ComponentName>
+            <Scroll>
             <DepartmentListWrapper>
                     {DepartmentList.map((department,index) =>
                         <Department>
@@ -24,6 +25,8 @@ function DepartmentBrowser(){
                         </Department>
                     )}
             </DepartmentListWrapper>
+            </Scroll>
+            
         </DepartmentBrowserWrapper>
     )
 }
