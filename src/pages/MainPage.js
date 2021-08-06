@@ -8,9 +8,9 @@ const MainPageWrapper = styled.div`
     display : flex;
     flex-direction : column;
     width : 100vw;
-    margin : 0 auto;
+    margin : 0;
     align-items : center;
-    justify-content : center;
+    // justify-content : center;
 `
 function MainPage(){
     return(

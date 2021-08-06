@@ -7,7 +7,7 @@ const IllustWrapper = styled.div`
     width : 1135px;
     justify-content : space-between;
     margin : 0 auto;
-    @media screen and (max-width:600px){
+    @media screen and (max-width:574px){
         display : None;
     }
 

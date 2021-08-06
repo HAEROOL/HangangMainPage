@@ -4,9 +4,9 @@ export const CurrentLectureWrapper = styled.div`
     width : 272px;
     height : 360px;
     @media screen and (max-width:574px){
-        width : 547px;
+        width : 522px;
         height : 555px;
-        margin : 15px 15px 27px 15px;
+        margin-left : 26px;
     }
 `
 export const LectureList = styled.ul`

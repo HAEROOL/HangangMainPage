@@ -3,9 +3,8 @@ export const LectureMaterialWrapper = styled.div`
     width : 660px;
     @media screen and (max-width:574px){
         width : 522px;
-        height : 242px;
-        // margin-bottom : 27px;
-        margin-left : 15px;
+        height : 254px;
+        margin-left : 26px;
     }
 `
 export const LectureMaterial = styled.div`

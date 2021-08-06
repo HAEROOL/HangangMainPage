@@ -9,9 +9,9 @@ export const MainPageMenuWrapper = styled.div`
     @media screen and (max-width:574px){
         display : flex;
         flex-direction : column;
-        // justify-content : center;
         width : 574px;
         height : 2170px;
+        justify-content : space-between;
     }
 `
 
@@ -38,8 +38,8 @@ export const ThirdMaterial = styled.div`
     grid-row :  19 / 55;
     margin-right : 16px;
     @media screen and (max-width:574px;){
-        margin : 0 auto;
-        padding :  0 auto;
+        margin : 0;
+        padding :  0;
     }
 `
 export const FourthMaterial = styled.div`

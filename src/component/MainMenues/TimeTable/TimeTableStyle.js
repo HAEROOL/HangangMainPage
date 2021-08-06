@@ -4,9 +4,9 @@ export const TimeTableWrapper = styled.div`
     width : 368px;
     height : 360px;
     @media screen and (max-width:574px){
-        width : 574px;
+        width : 522px;
         height : 456px;
-        margin : 15px 15px 27px 15px;
+        margin-left : 26px;
     }
 `
 export const LectureList = styled.ul`

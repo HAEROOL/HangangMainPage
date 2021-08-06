@@ -8,15 +8,17 @@ const TotalPage = styled.div`
   display : flex;
   font-family: 'Noto Sans KR';
   flex-direction : column;
-  justify-content : center;
-  align-items : center;
+  @media screen and (max-width : 574px){
+    width : 574px;
+    
+  }
 `
 function App() {
   return (
       <TotalPage>
         <Banner/>
         <MainPage/>
-        {/* <MainPageFooter/> */}
+        <MainPageFooter/>
       </TotalPage>
 
   );

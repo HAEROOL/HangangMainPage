@@ -5,15 +5,16 @@ export const DepartmentBrowserWrapper = styled.div`
     margin : 0 auto;
     margin-bottom : 32px;
     @media screen and (max-width : 574px){
-        width : 570px;
-        height : 190px;
+        width : 522px;
+        height : 250px;
         margin : 0 auto;
+        margin-left : 26px;
     }
 `
 export const Scroll = styled.div`
     @media screen and (max-width : 574px){
-        width : 574px;
-        height : 180px;
+        width : 522px;
+        height : 139px;
         overflow-x : scroll;
     }
 `
@@ -23,31 +24,29 @@ export const DepartmentListWrapper = styled.div`
     @media screen and (max-width : 574px){
         width : 1502px;
         height : 139px;
-        margin : 0 15px;
     }
 `
 export const Department = styled.a`
-    position : relative;
-    text-align : center;
-    object-fit: contain;
-    font-size : 12px;
-    @media screen and (max-width : 574px){
-        font-size : 20px;
-    }
-`
-export const DepartmentImages = styled.img`
+    display : flex;
+    align-items : flex-end;
     cursor : pointer;
     height : 87px;
     width : 100px;
-    border-radius : 10px;
+    font-size : 12px;
+    background : url(${props => props.url});
+    border-radius : 8px;
+    background-size: contain;
     @media screen and (max-width : 574px){
+        font-size : 20px;
         width : 139px;
         height : 139px;
     }
 `
 export const DepartmentName = styled.div`
-    position : absolute;
-    top : 50%;  
+    display : flex;
+    width : 100%;
+    text-align : center;
+    justify-content : center;
     color : #ffffff;
 `
 export const ComponentName = styled.div`
