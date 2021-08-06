@@ -8,6 +8,7 @@ export const PageHeader = styled.header`
     border-bottom : solid 1px #eeeeee;
     margin : 0 auto;
     @media screen and (max-width:600px){
+        width :600px;
         border-bottom : None;
     }
 `
@@ -18,6 +19,10 @@ export const MenuWrapper = styled.nav`
     align-items : center;
     justify-content : space-between;
     text-align : center;
+    @media screen and (max-width:600px){
+        width :100%;
+        margin-left : 16px;
+    }
 `
 export const MainMenuWrapper = styled.div`
     width : 560px;
