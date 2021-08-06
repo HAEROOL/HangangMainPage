@@ -1,20 +1,25 @@
 import Banner from './component/Banner/Banner'
 import styled from 'styled-components';
-import MainPageIllust from './component/Banner/MainPageIllust';
+import MainPage from './pages/MainPage';
+import MainPageFooter from './component/Footer/MainPageFooter'
+import './App.css';
+
 const TotalPage = styled.div`
-  width : 100vw;
-  height : 100vh;
   display : flex;
+  font-family: 'Noto Sans KR';
   flex-direction : column;
-  // justify-content : center;
+  justify-content : center;
   align-items : center;
 `
 function App() {
   return (
-    <TotalPage>
-      <Banner/>
-      <MainPageIllust/>
-    </TotalPage>
+
+      <TotalPage>
+        <Banner/>
+        <MainPage/>
+        <MainPageFooter/>
+      </TotalPage>
+
   );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import MainPageIllust from '../component/Banner/MainPageIllust'
-import DepartmentBrowser from '../component/MainMenues/Department/Department'
+import DepartmentBrowser from '../component/Department/Department'
 import MainPageMenues from '../component/MainMenues/MainPageMeues'
 import styled from 'styled-components'
 

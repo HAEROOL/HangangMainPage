@@ -4,7 +4,7 @@ import {ReactComponent as HangangIllust} from '../../assets/images/HangangMainpa
 const IllustWrapper = styled.div`
     display : flex;
     height : 330px;
-    width : 1156px;
+    width : 1135px;
     justify-content : space-between;
     margin : 0 auto;
     @media screen and (max-width:600px){
