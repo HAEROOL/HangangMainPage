@@ -17,6 +17,7 @@ export const FooterContentsWrapper = styled.div`
     width : 1280px;
     height : 203px;
     background : #3e3e3e;
+
 `
 export const HangangMenuWrapper = styled.div`
     width : 295px;
