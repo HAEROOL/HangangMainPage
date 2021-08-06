@@ -4,7 +4,7 @@ export const MainPageFooterWrapper = styled.div`
     width : 100vw;
     height : 203px;
     background : #3e3e3e;
-    @media screen and (max-width : 600px){
+    @media screen and (max-width : 574px){
         display : None;
     }
 `
