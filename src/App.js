@@ -13,7 +13,6 @@ const TotalPage = styled.div`
 `
 function App() {
   return (
-
       <TotalPage>
         <Banner/>
         <MainPage/>
