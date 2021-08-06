@@ -14,7 +14,7 @@ const TotalPage = styled.div`
 function App() {
   return (
       <TotalPage>
-        {/* <Banner/> */}
+        <Banner/>
         <MainPage/>
         {/* <MainPageFooter/> */}
       </TotalPage>
