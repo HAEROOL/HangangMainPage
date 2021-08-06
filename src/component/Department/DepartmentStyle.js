@@ -31,6 +31,9 @@ export const Department = styled.a`
     text-align : center;
     object-fit: contain;
     font-size : 12px;
+    @media screen and (max-width : 574px){
+        font-size : 20px;
+    }
 `
 export const DepartmentImages = styled.img`
     cursor : pointer;
