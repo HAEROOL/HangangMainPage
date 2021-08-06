@@ -15,9 +15,9 @@ function App() {
   return (
 
       <TotalPage>
-        <Banner/>
+        {/* <Banner/> */}
         <MainPage/>
-        <MainPageFooter/>
+        {/* <MainPageFooter/> */}
       </TotalPage>
 
   );
