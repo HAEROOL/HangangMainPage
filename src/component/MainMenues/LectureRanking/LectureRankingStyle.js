@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import '../../../assets/fonts/font.css'
 export const LectureRankingWrapper = styled.div`
     width : 470px;
     height : 450px;
@@ -21,6 +21,7 @@ export const RankingWrapper = styled.div`
     }
 `
 export const ComponentName = styled.div`
+    font-family : NotoSansKRMedium;
     font-size : 16px;
     margin-bottom : 16px;
     @media screen and (max-width : 574px){

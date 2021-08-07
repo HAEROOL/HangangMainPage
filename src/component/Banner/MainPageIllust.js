@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import '../../assets/fonts/font.css'
 import {ReactComponent as HangangIllust} from '../../assets/images/HangangMainpageIllust.svg'
 const IllustWrapper = styled.div`
     display : flex;
@@ -14,6 +15,7 @@ const IllustWrapper = styled.div`
 `
 const TextWrapper = styled.div`
     display : flex;
+    font-family : 'NanumSquareRound';
     flex-direction : column;
     font-size : 36px;
     align-items : end;
@@ -23,11 +25,10 @@ function MainPageIllust(){
     return (
         <IllustWrapper>
             <TextWrapper>
-                <div style={{fontSize:'18px'}}>
+                <div style={{fontSize:'18px',fontFamily:'NotoSansKrLight'}}>
                     솔직한 강의평을 원한다면?
-                    <br/>
                 </div>
-                <div>
+                <div style={{marginTop:'16px'}}>
                     가자, 한강으로!
                 </div>
             </TextWrapper>
