@@ -17,7 +17,7 @@ export const RankingWrapper = styled.div`
     }
 `
 export const ComponentName = styled.div`
-    font-family : NotoSansKRMedium;
+    font-family : NotoSansKRLight;
     font-size : 16px;
     margin-bottom : 16px;
     @media screen and (max-width : 574px){
@@ -26,7 +26,7 @@ export const ComponentName = styled.div`
 `
 export const DepartmentSelector = styled.ul`
     display : flex;
-    padding : 0;
+    padding : 0 10px;
     margin : 0 auto;
     justify-content : space-around;
     align-items : center;

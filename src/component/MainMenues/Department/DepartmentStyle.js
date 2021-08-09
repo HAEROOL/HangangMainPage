@@ -34,6 +34,7 @@ export const Department = styled.a`
     background-size: 100px 87px;
     @media screen and (max-width : 574px){
         height : 100px;
+        background-size: 100px 100px;
         font-size : 12px;
     }
 `
@@ -47,7 +48,7 @@ export const DepartmentName = styled.div`
     margin-bottom : 9px;
 `
 export const ComponentName = styled.div`
-    font-family : NotoSansKRMedium;
+    font-family : NotoSansKRLight;
     font-size : 16px;
     text-align : left;
     margin-bottom : 16px;
