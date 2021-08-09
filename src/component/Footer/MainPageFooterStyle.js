@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const MainPageFooterWrapper = styled.div`
-    width : 100vw;
+    width : 100%;
     height : 203px;
     background : #3e3e3e;
     @media screen and (max-width : 574px){
-        display : None;
+        height : 72px;
     }
 `
 export const FooterContentsWrapper = styled.div`
@@ -17,18 +17,29 @@ export const FooterContentsWrapper = styled.div`
     width : 1280px;
     height : 203px;
     background : #3e3e3e;
-
+    @media screen and (max-width : 574px){
+        width : 100%;
+        height : 100%;
+        background : white;
+    }
 `
 export const HangangMenuWrapper = styled.div`
     width : 295px;
     display : flex;
     justify-content : space-between;
     align-items : center;
+    @media screen and (max-width : 574px){
+        width : 100%;
+        justify-content : space-around;
+    }
 `
 export const HangangMenu = styled.a`
     color : #ffffff;
     font-size : 15px;
     cursor : pointer;
+    @media screen and (max-width : 574px){
+        color : black;
+    }
 `
 
 export const FooterMenuWrapper = styled.div`
@@ -58,10 +69,16 @@ export const LogosMenuContainer = styled.div`
     display : flex;
     width : 1135px;
     justify-content : space-between;
+    @media screen and (max-width : 574px){
+        display : None;
+    }
 `
 export const CopyRight = styled.div`
     width : 289px;
     height : 16px;
     font-size : 10px;
     color : #9fa9b3;
+    @media screen and (max-width : 574px){
+        display : None;
+    }
 `

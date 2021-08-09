@@ -10,15 +10,12 @@ const TotalPage = styled.div`
   width : 100vw;
   font-family : NotoSansKRLight;
   margin : 0 auto;
-  @media screen and (max-width : 574px){
-    width : 574px;
-  }
 `
 function App() {
   return (
       <TotalPage>
-        <Banner/>
-        <MainPage/>
+        {/* <Banner/> */}
+        {/* <MainPage/> */}
         <MainPageFooter/>
       </TotalPage>
 
