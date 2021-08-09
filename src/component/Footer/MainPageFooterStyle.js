@@ -53,8 +53,8 @@ export const FooterMenu = styled.a`
     font-size : 15px;
     align-items : center;
     color : #9fa9b3;
-    width : 154px;
-    padding 3px 6px;
+    margin : 0 auto;
+    padding : 4px 14px;
     border-radius : 20px;
     border : 1px solid #9fa9b3;
     cursor : pointer;
