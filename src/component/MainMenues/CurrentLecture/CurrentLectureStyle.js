@@ -1,17 +1,14 @@
 import styled from 'styled-components'
-
 export const CurrentLectureWrapper = styled.div`
     width : 274px;
     height : 318px;
     @media screen and (max-width:574px){
-        width : 90%;
-        height : 555px;
+        width : 100%;
     }
 `
 export const LectureList = styled.ul`
     width : 272px;
     height : 276px;
-    
     padding : 0;
     display : flex;
     flex-direction : column;

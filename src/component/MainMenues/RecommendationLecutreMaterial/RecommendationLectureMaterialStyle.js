@@ -2,7 +2,7 @@ import styled from 'styled-components'
 export const LectureMaterialWrapper = styled.div`
     width : 660px;
     @media screen and (max-width:574px){
-        width : 90%;
+        width : 100%;
         height : 232px;
     }
 `

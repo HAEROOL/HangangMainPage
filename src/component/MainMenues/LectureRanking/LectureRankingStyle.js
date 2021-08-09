@@ -4,8 +4,7 @@ export const LectureRankingWrapper = styled.div`
     width : 470px;
     height : 450px;
     @media screen and (max-width:574px){
-        border : 1px solid black;
-        width : 90%;
+        width : 100%;
     } 
 `
 export const RankingWrapper = styled.div`
