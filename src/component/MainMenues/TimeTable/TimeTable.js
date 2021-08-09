@@ -6,17 +6,18 @@ function TimeTable(){
     return (
         <TimeTableWrapper>
             <ComponentName>내 시간표</ComponentName>
-            <LectureList>
-                {lectureList.map((lecture, index) => 
-                    <Lecture key={index}>
-                        <LectureNameAndProfessor>
-                            {lecture}
-                            <Professor>미정</Professor>
-                        </LectureNameAndProfessor>
-                        <EvaluationButton>평가하기</EvaluationButton>
-                    </Lecture>
-                )}
-            </LectureList>
+                <LectureList>
+                    {lectureList.map((lecture, index) => 
+                        <Lecture key={index}>
+                            <LectureNameAndProfessor>
+                                {lecture}
+                                <Professor>미정</Professor>
+                            </LectureNameAndProfessor>
+                            <EvaluationButton>평가하기</EvaluationButton>
+                        </Lecture>
+                    )}
+                </LectureList>
+            
         </TimeTableWrapper>
     )
 }

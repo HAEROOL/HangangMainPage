@@ -7,7 +7,8 @@ import { FirstMaterial, FourthMaterial, MainPageMenuWrapper, SecondMaterial, Thi
 function MainPageMenu(){
     return(
         <MainPageMenuWrapper>
-            <LectureRanking/>
+            {/* <LectureRanking/> */}
+            <TimeTable/>
         </MainPageMenuWrapper>
     )
 }
