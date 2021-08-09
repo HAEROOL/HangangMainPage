@@ -1,19 +1,20 @@
 import styled from 'styled-components'
 
 export const PageHeader = styled.header`
-    width : 1135px;
-    height : 79px;
+    width : 100%;
+    min-width : 1280px;
+    height : 80px;
     display : flex;
     justify-content : center;
     border-bottom : solid 1px #eeeeee;
-    margin : 0 auto;
     @media screen and (max-width : 574px){
         width : 100%;
         border : none;
+        min-width : 1px;
     }
 `
 export const MenuWrapper = styled.nav`
-    width : 100%;
+    width : 1135px;
     height : 79px;
     display : flex;
     align-items : center;
@@ -56,7 +57,6 @@ export const LoginMenu = styled.a`
     display : flex;
     justify-content : center;
     align-items : center;
-    width : 98px;
     height : 15px;
     color : #238bfe;
     font-size : 17px;
@@ -64,13 +64,4 @@ export const LoginMenu = styled.a`
     @media screen and (max-width : 574px){
         display : None;
     }
-`
-export const Test = styled.div`
-    width : 100px;
-    height : 100px;
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    background : yellow;
-    border-bottom : 4px black solid;
 `

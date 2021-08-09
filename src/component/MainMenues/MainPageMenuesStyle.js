@@ -82,6 +82,7 @@ export const MainMenuBrowserWrapper = styled.div`
     gap : 16px;
     width : 1146px;
     margin : 0 auto;
+    margin-bottom : 90px;
     @media screen and (max-width : 574px){
         width : 100%;
     }
