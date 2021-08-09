@@ -11,7 +11,7 @@ import ElectricalElectronicCommunication from '../../../assets/images/Department
 import ComputerEngineering from '../../../assets/images/Department/ComputerEngineering.jpg'
 import Fusion from '../../../assets/images/Department/Fusion.jpg'
 const DepartmentList = [Elective, HRD, MechanicalEngineerging,DesignArchitecturalEngineering, MechatronicsEngineering, IndustrialManagement, EnergyNewMaterialsChemicalEngineering, ElectricalElectronicCommunication, ComputerEngineering, Fusion]
-const DepartmentNameList = ['교양학부','HRD학과','기계공학부','디자인 건축 공학부','메카트로닉스공학부','산업경영학부','에너지신소재 화학 공학부','전기전자통신 공학부','컴퓨터공학부','융합학과']
+const DepartmentNameList = ['교양학부','HRD학과','기계공학부','디자인 건축 공학부','메카트로닉스공학부','산업경영학부','에너지신소재화학공학부','전기전자통신공학부','컴퓨터공학부','융합학과']
 
 function DepartmentBrowser(){
     return (
@@ -19,8 +19,8 @@ function DepartmentBrowser(){
             <ComponentName>학부별 탐색</ComponentName>
             <Scroll>
             <DepartmentListWrapper>
-                    {DepartmentList.map((department,index) =>
-                        <Department url={department}>
+                    {DepartmentList.map((department,id) =>
+                        <Department url={department} key={id}>
                             <DepartmentName>{DepartmentNameList[DepartmentList.indexOf(department)]}</DepartmentName>
                         </Department>
                     )}
