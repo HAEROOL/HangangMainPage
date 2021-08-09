@@ -2,29 +2,25 @@ import styled from "styled-components";
 import '../../../assets/fonts/font.css'
 export const DepartmentBrowserWrapper = styled.div`
     width : 1135px;
-    height : 120px;
+    height : 127px;
     margin : 0 auto;
-    margin-bottom : 32px;
     @media screen and (max-width : 574px){
-        width : 522px;
-        height : 250px;
-        margin : 0 auto;
-        margin-left : 26px;
+        width : 100%;
+        height : 140px;
     }
 `
 export const Scroll = styled.div`
     @media screen and (max-width : 574px){
-        width : 522px;
-        height : 160px;
         overflow-x : scroll;
+        height : 110px;
     }
 ` 
 export const DepartmentListWrapper = styled.div`
     display : flex;
     justify-content : space-between;
     @media screen and (max-width : 574px){
-        width : 1502px;
-        height : 139px;
+        width : 1100px;
+        padding : 0 10px;
     }
 `
 export const Department = styled.a`
@@ -39,10 +35,8 @@ export const Department = styled.a`
     background-position: center;
     background-size: 100px 87px;
     @media screen and (max-width : 574px){
-        font-size : 20px;
-        width : 139px;
-        height : 139px;
-        background-size: 139px 139px;
+        height : 100px;
+        font-size : 12px;
     }
 `
 export const DepartmentName = styled.div`
@@ -60,6 +54,6 @@ export const ComponentName = styled.div`
     text-align : left;
     margin-bottom : 16px;
     @media screen and (max-width : 574px){
-        font-size : 26px;
+        margin-left : 16px;
     }
 `
