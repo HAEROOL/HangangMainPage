@@ -10,6 +10,7 @@ export const LectureList = styled.ul`
     width : 272px;
     height : 276px;
     padding : 0;
+    margin : 0;
     display : flex;
     flex-direction : column;
     justify-content : space-around;
