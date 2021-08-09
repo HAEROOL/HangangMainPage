@@ -8,7 +8,8 @@ function MainPageMenu(){
     return(
         <MainPageMenuWrapper>
             {/* <LectureRanking/> */}
-            <TimeTable/>
+            {/* <TimeTable/> */}
+            <RecommendationLectureMaterial/>
         </MainPageMenuWrapper>
     )
 }
