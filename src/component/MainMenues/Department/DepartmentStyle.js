@@ -2,8 +2,6 @@ import styled from "styled-components";
 import '../../../assets/fonts/font.css'
 export const DepartmentBrowserWrapper = styled.div`
     width : 1135px;
-    height : 127px;
-    margin : 0 auto;
     @media screen and (max-width : 574px){
         width : 100%;
         height : 140px;
@@ -14,7 +12,7 @@ export const Scroll = styled.div`
         overflow-x : scroll;
         height : 110px;
     }
-`
+` 
 export const DepartmentListWrapper = styled.div`
     display : flex;
     justify-content : space-between;
@@ -54,6 +52,8 @@ export const ComponentName = styled.div`
     text-align : left;
     margin-bottom : 16px;
     @media screen and (max-width : 574px){
-        margin-left : 16px;
+        width : 90%;
+        margin : 0 auto;
+        margin-bottom : 16px;
     }
 `
