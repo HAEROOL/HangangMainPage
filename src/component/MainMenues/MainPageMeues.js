@@ -9,7 +9,8 @@ function MainPageMenu(){
         <MainPageMenuWrapper>
             {/* <LectureRanking/> */}
             {/* <TimeTable/> */}
-            <RecommendationLectureMaterial/>
+            {/* <RecommendationLectureMaterial/> */}
+            <CurrentLecture/>
         </MainPageMenuWrapper>
     )
 }
