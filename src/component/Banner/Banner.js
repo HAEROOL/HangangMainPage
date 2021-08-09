@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./BannerStyle'
+import {Test,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./BannerStyle'
 import {ReactComponent as HangangLogo} from '../../assets/images/HangangLogo.svg'
 const menuList = ['홈','강의평','강의자료','시간표']
 function Banner(){
@@ -19,6 +19,7 @@ function Banner(){
                     <LoginMenu>회원가입</LoginMenu>
                 </LoginMenuWrapper>
             </MenuWrapper>
+            
         </PageHeader>
         
     )

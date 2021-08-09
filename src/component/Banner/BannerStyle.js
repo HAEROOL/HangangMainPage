@@ -7,21 +7,20 @@ export const PageHeader = styled.header`
     justify-content : center;
     border-bottom : solid 1px #eeeeee;
     margin : 0 auto;
-    @media screen and (max-width:574px){
-        width : 522px;
-        border-bottom : None;
-        margin : 0 auto;
+    @media screen and (max-width : 574px){
+        width : 100%;
+        border : none;
     }
 `
 export const MenuWrapper = styled.nav`
-    width : 1135px;
+    width : 100%;
     height : 79px;
     display : flex;
     align-items : center;
     justify-content : space-between;
     text-align : center;
-    @media screen and (max-width:574px){
-        width :522px;
+    @media screen and (max-width : 574px){
+        width : 90%;
     }
 `
 export const MainMenuWrapper = styled.div`
@@ -38,7 +37,7 @@ export const LoginMenuWrapper = styled.div`
     justify-content : space-between;
     align-items : center;
 `
-export const MainMenu = styled.div`
+export const MainMenu = styled.a`
     display : flex;
     justify-content : center;
     align-items : center;
@@ -46,16 +45,14 @@ export const MainMenu = styled.div`
     height : 79px;
     color : #238bfe;
     font-size : 17px;
-    :hover{
-        cursor : pointer;
-    }
+    cursor : pointer;
     border-bottom : ${props=>props.isClicked?'#238bfe 2px solid;':''};
-    @media screen and (max-width:574px){
+    @media screen and (max-width : 574px){
         display : None;
     }
 `
 
-export const LoginMenu = styled.div`
+export const LoginMenu = styled.a`
     display : flex;
     justify-content : center;
     align-items : center;
@@ -63,10 +60,17 @@ export const LoginMenu = styled.div`
     height : 15px;
     color : #238bfe;
     font-size : 17px;
-    :hover{
-        cursor : pointer;
-    }
-    @media screen and (max-width:574px){
+    cursor : pointer;
+    @media screen and (max-width : 574px){
         display : None;
     }
+`
+export const Test = styled.div`
+    width : 100px;
+    height : 100px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background : yellow;
+    border-bottom : 4px black solid;
 `
