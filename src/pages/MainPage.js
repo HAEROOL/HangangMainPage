@@ -15,8 +15,8 @@ function MainPage(){
     return(
         <MainPageWrapper>
             <MainPageIllust/>
-            <DepartmentBrowser/>
-            <MainPageMenues/>
+            {/* <DepartmentBrowser/> */}
+            {/* <MainPageMenues/> */}
         </MainPageWrapper>
     )
 }
