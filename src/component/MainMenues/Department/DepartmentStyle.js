@@ -18,7 +18,7 @@ export const Scroll = styled.div`
         height : 160px;
         overflow-x : scroll;
     }
-`
+` 
 export const DepartmentListWrapper = styled.div`
     display : flex;
     justify-content : space-between;

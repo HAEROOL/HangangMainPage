@@ -14,8 +14,8 @@ const MainPageWrapper = styled.div`
 function MainPage(){
     return(
         <MainPageWrapper>
-            <MainPageIllust/>
-            <DepartmentBrowser/>
+            {/* <MainPageIllust/> */}
+            {/* <DepartmentBrowser/> */}
             <MainPageMenues/>
         </MainPageWrapper>
     )

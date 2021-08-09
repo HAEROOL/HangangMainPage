@@ -9,8 +9,7 @@ export const MainPageMenuWrapper = styled.div`
     @media screen and (max-width:574px){
         display : flex;
         flex-direction : column;
-        width : 574px;
-        height : 2170px;
+        width : 100%;
         justify-content : space-between;
     }
 `

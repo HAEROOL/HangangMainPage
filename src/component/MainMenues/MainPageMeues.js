@@ -7,18 +7,7 @@ import { FirstMaterial, FourthMaterial, MainPageMenuWrapper, SecondMaterial, Thi
 function MainPageMenu(){
     return(
         <MainPageMenuWrapper>
-            <FirstMaterial>
-                <LectureRanking/>
-            </FirstMaterial>
-            <SecondMaterial>
-                <RecommendationLectureMaterial/>
-            </SecondMaterial>
-            <ThirdMaterial>
-                <TimeTable/>
-            </ThirdMaterial>
-            <FourthMaterial>
-                <CurrentLecture/>
-            </FourthMaterial>
+            <LectureRanking/>
         </MainPageMenuWrapper>
     )
 }

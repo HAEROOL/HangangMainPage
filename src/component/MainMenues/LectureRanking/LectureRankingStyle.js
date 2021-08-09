@@ -4,11 +4,9 @@ export const LectureRankingWrapper = styled.div`
     width : 470px;
     height : 450px;
     @media screen and (max-width:574px){
-        width : 522px;
-        height : 625px;
-        margin-left : 26px;
-    }
-    
+        border : 1px solid black;
+        width : 90%;
+    } 
 `
 export const RankingWrapper = styled.div`
     width : 464px;
@@ -16,8 +14,7 @@ export const RankingWrapper = styled.div`
     border-radius : 8px;
     border : solid 1px #eeeeee;
     @media screen and (max-width : 574px){
-        width : 522px;
-        height : 574px;
+        width : 100%;
     }
 `
 export const ComponentName = styled.div`
@@ -25,12 +22,12 @@ export const ComponentName = styled.div`
     font-size : 16px;
     margin-bottom : 16px;
     @media screen and (max-width : 574px){
-        font-size : 25px;
+        font-size : 16px;
     }
 `
 export const DepartmentSelector = styled.ul`
     display : flex;
-    padding : 0px;
+    padding : 0;
     margin : 0 auto;
     justify-content : space-around;
     align-items : center;
@@ -39,8 +36,8 @@ export const DepartmentSelector = styled.ul`
     list-style : none;
     border-bottom : 1px solid #eeeeee;
     @media screen and (max-width : 574px){
-        width : 759px;
-        font-size : 20px;
+        width : 600px;
+        font-size : 14px;
     }
 `
 export const LectureRankingHeader = styled.div`
@@ -49,8 +46,10 @@ export const LectureRankingHeader = styled.div`
     }
 `
 export const DepartmentName = styled.div`
-    heigth : 40px;
+    height : 40px;
+    display : flex;
+    align-items : center;
     cursor : pointer;
-    color : ${props => props.isClicked?'#238bfe':'#999999'}
-    
+    color : ${props => props.isClicked?'#238bfe':'#999999'};
+    border-bottom : ${props => props.isClicked?'#ffab2e 2px solid':''}
 `
