@@ -7,8 +7,10 @@ export const PageHeader = styled.header`
     justify-content : center;
     border-bottom : solid 1px #eeeeee;
     margin : 0 auto;
-    @media screen and (max-width:600px){
+    @media screen and (max-width:574px){
+        width : 522px;
         border-bottom : None;
+        margin : 0 auto;
     }
 `
 export const MenuWrapper = styled.nav`
@@ -18,6 +20,9 @@ export const MenuWrapper = styled.nav`
     align-items : center;
     justify-content : space-between;
     text-align : center;
+    @media screen and (max-width:574px){
+        width :522px;
+    }
 `
 export const MainMenuWrapper = styled.div`
     width : 560px;
@@ -45,7 +50,7 @@ export const MainMenu = styled.div`
         cursor : pointer;
     }
     border-bottom : ${props=>props.isClicked?'#238bfe 2px solid;':''};
-    @media screen and (max-width:600px){
+    @media screen and (max-width:574px){
         display : None;
     }
 `
@@ -61,7 +66,7 @@ export const LoginMenu = styled.div`
     :hover{
         cursor : pointer;
     }
-    @media screen and (max-width:600px){
+    @media screen and (max-width:574px){
         display : None;
     }
 `
