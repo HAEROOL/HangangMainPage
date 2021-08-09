@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import '../../assets/fonts/font.css'
-import {ReactComponent as HangangIllust} from '../../assets/images/HangangMainpageIllust.svg'
+import {ReactComponent as HangangIllust} from '../../assets/images/mainmenues/HangangMainpageIllust.svg'
 const IllustWrapper = styled.div`
     display : flex;
     height : 330px;

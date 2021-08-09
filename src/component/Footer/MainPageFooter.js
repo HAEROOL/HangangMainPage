@@ -1,7 +1,7 @@
 import React from 'react'
-import {ReactComponent as HangangFooterLogo} from '../../assets/images/HangangLogo_gray.svg'
-import {ReactComponent as FacebookLogo} from '../../assets/images/FacebookLogo.svg'
-import {ReactComponent as HomeLogo} from '../../assets/images/HomeLogo.svg'
+import {ReactComponent as HangangFooterLogo} from '../../assets/images/footer/HangangLogo_gray.svg'
+import {ReactComponent as FacebookLogo} from '../../assets/images/footer/FacebookLogo.svg'
+import {ReactComponent as HomeLogo} from '../../assets/images/footer/HomeLogo.svg'
 import { CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooterStyle'
 const hangangMenuList = ['강의평','강의자료','시간표']
 const footerMenuList = ['BCSD Lab 바로가기','코리아텍 바로가기','아우누리 바로가기','개인정보 처리방침']
