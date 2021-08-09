@@ -7,8 +7,8 @@ function CurrentLecture(){
         <CurrentLectureWrapper>
             <ComponentName>최근 본 강의</ComponentName>
             <LectureList>
-                {lectureList.map((lecture, index) => 
-                        <Lecture key={index}>
+                {lectureList.map((lecture, id) => 
+                        <Lecture key={id}>
                             <LectureNameAndProfessor>
                                 {lecture}
                                 <Professor>미정</Professor>

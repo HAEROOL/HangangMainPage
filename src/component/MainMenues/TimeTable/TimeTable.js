@@ -7,8 +7,8 @@ function TimeTable(){
         <TimeTableWrapper>
             <ComponentName>내 시간표</ComponentName>
                 <LectureList>
-                    {lectureList.map((lecture, index) => 
-                        <Lecture key={index}>
+                    {lectureList.map((lecture, id) => 
+                        <Lecture key={id}>
                             <LectureNameAndProfessor>
                                 {lecture}
                                 <Professor>미정</Professor>

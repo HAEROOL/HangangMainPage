@@ -12,7 +12,7 @@ function LectureRanking(){
             <RankingWrapper>
                 <LectureRankingHeader>
                     <DepartmentSelector>
-                        {DepartmentList.map((department,index)=><DepartmentName key={index} value={department} onClick={e => ClickDepartment(e)} isClicked={selectedDepartment===DepartmentList.indexOf(department)?true:false}>{department}</DepartmentName>)}
+                        {DepartmentList.map((department,id)=><DepartmentName key={id} value={department} onClick={e => ClickDepartment(e)} isClicked={selectedDepartment===DepartmentList.indexOf(department)?true:false}>{department}</DepartmentName>)}
                     </DepartmentSelector>
                 </LectureRankingHeader>
             </RankingWrapper>
