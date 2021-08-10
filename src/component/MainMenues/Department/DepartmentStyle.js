@@ -15,15 +15,17 @@ export const Scroll = styled.div`
         height : 120px;
     }
 `
-export const DepartmentListWrapper = styled.div`
+export const DepartmentListWrapper = styled.ul`
     display : flex;
     justify-content : space-between;
+    padding : 0;
+    margin : 0;
     @media screen and (max-width : 574px){
         width : 1100px;
         padding : 0 10px;
     }
 `
-export const Department = styled.a`
+export const Department = styled.li`
     display : flex;
     align-items : flex-end;
     cursor : pointer;
