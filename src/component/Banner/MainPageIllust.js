@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import '../../assets/fonts/font.css'
-import {ReactComponent as HangangIllust} from '../../assets/images/HangangMainpageIllust.svg'
+import {ReactComponent as HangangIllust} from '../../assets/images/mainmenues/HangangMainpageIllust.svg'
 const IllustWrapper = styled.div`
     display : flex;
     height : 330px;
@@ -21,16 +21,27 @@ const TextWrapper = styled.div`
     align-items : end;
     margin-top : 212px;
 `
+const FirstLineOfPhrase = styled.span`
+    display : block;
+    font-size : 18px;
+    font-family : 'NotoSansKrLight'
+`
+const SecondLineOfPhrase = styled.div`
+    display : block;
+    margin-top : 16px;
+    color : #222222;
+    font-weight : 800;
+`
 function MainPageIllust(){
     return (
         <IllustWrapper>
             <TextWrapper>
-                <div style={{fontSize:'18px',fontFamily:'NotoSansKrLight'}}>
+                <FirstLineOfPhrase>
                     솔직한 강의평을 원한다면?
-                </div>
-                <div style={{marginTop:'16px'}}>
+                </FirstLineOfPhrase>
+                <SecondLineOfPhrase>
                     가자, 한강으로!
-                </div>
+                </SecondLineOfPhrase>
             </TextWrapper>
             <HangangIllust style={{marginTop : '42px'}}/>
         </IllustWrapper>

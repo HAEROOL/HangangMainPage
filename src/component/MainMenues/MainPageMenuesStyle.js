@@ -1,52 +1,89 @@
 import styled from 'styled-components'
 
 export const MainPageMenuWrapper = styled.div`
-    display : grid;
-    width : 1135px;
-    height : 600px;
-    margin : 0 auto;
-    margin-bottom : 90px;
-    @media screen and (max-width:574px){
+    @media screen and (max-width : 574px){
         display : flex;
-        flex-direction : column;
-        width : 574px;
-        height : 2170px;
-        justify-content : space-between;
+        margin : 0 auto;
     }
-`
 
+`
 export const FirstMaterial = styled.div`
-    grid-column : 1 / 47;
-    grid-row : 1 / 45;
-    margin-right : 16px;
-    @media screen and (max-width:574px;){
-        margin : 0;
-        padding :  0;
+    @media screen and (max-width : 574px){
+        order : 1;
+        width : 90%;
+        margin : 0 auto;
     }
+
 `
 export const SecondMaterial = styled.div`
-    grid-column : 47 / 119;
-    grid-row : 1 / 19;
-    margin-bottom : 32px;
-    @media screen and (max-width:574px;){
-        margin : 0;
-        padding :  0;
+    @media screen and (max-width : 574px){
+        order : 2;
+        width : 100%;
     }
 `
 export const ThirdMaterial = styled.div`
-    grid-column : 47 / 89;
-    grid-row :  19 / 55;
-    margin-right : 16px;
-    @media screen and (max-width:574px;){
-        margin : 0;
-        padding :  0;
+    @media screen and (max-width : 574px){
+        order : 3;
+        width : 90%;
+        margin : 0 auto;
     }
 `
 export const FourthMaterial = styled.div`
-    grid-column : 89 / 119;
-    grid-row : 19 / 55;
-    @media screen and (max-width:574px;){
-        margin : 0;
-        padding :  0;
+    @media screen and (max-width : 574px){
+        order : 4;
+        width : 90%;
+        margin : 0 auto;
+    }
+
+`
+export const FifthMaterial = styled.div`
+    @media screen and (max-width : 574px){
+        order : 5;
+        width : 90%;
+        margin : 0 auto;
+    }
+
+`
+
+export const ThridFifthWrapper = styled.div`
+    display : flex;
+    flex-wrap : wrap;
+    gap : 16px;
+    @media screen and (max-width : 574px){
+        width : 100%;
+        flex-direction : column;
+        order : 9999;
+    }
+`
+
+export const FourthThirdFifthWrapper = styled.div`
+    display : flex;
+    flex-direction : column;
+    gap : 16px;
+    @media screen and (max-width : 574px){
+        width : 100%;
+        order : 9999;
+    }
+`
+export const FirstFourthThirdFifthWrapper = styled.div`
+    display : flex;
+    gap : 16px;
+    flex-wrap : wrap;
+    @media screen and (max-width : 574px){
+        width : 100%;
+        flex-direction : column;
+        margin : 0 auto;
+        order : 1;
+    }
+`
+export const MainMenuBrowserWrapper = styled.div`
+    display : flex;
+    flex-direction : column;
+    gap : 16px;
+    width : 1146px;
+    margin : 0 auto;
+    margin-bottom : 90px;
+    @media screen and (max-width : 574px){
+        width : 100%;
     }
 `

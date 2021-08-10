@@ -2,8 +2,6 @@ import styled from "styled-components";
 import '../../../assets/fonts/font.css'
 export const DepartmentBrowserWrapper = styled.div`
     width : 1135px;
-    height : 127px;
-    margin : 0 auto;
     @media screen and (max-width : 574px){
         width : 100%;
         height : 140px;
@@ -38,6 +36,7 @@ export const Department = styled.li`
     background-size: 100px 87px;
     @media screen and (max-width : 574px){
         height : 100px;
+        background-size: 100px 100px;
         font-size : 12px;
         background-size: 100px 100px;
     }
@@ -52,11 +51,13 @@ export const DepartmentName = styled.div`
     margin-bottom : 9px;
 `
 export const ComponentName = styled.div`
-    font-family : NotoSansKRMedium;
+    font-family : NotoSansKRLight;
     font-size : 16px;
     text-align : left;
     margin-bottom : 16px;
     @media screen and (max-width : 574px){
-        margin-left : 16px;
+        width : 90%;
+        margin : 0 auto;
+        margin-bottom : 16px;
     }
 `
