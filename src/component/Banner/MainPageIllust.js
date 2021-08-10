@@ -23,10 +23,12 @@ const TextWrapper = styled.div`
 `
 const FirstLineOfPhrase = styled.span`
     display : block;
+    align-items : start;
     font-size : 18px;
     font-family : 'NotoSansKrLight'
 `
 const SecondLineOfPhrase = styled.div`
+    align-items : start;
     display : block;
     margin-top : 16px;
     color : #222222;
