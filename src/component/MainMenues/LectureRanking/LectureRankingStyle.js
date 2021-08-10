@@ -47,6 +47,7 @@ export const LectureRankingHeader = styled.div`
 export const DepartmentName = styled.div`
     height : 40px;
     display : flex;
+    margin-bottom : ${props => props.isClicked?'-2px':'0'};
     align-items : center;
     cursor : pointer;
     color : ${props => props.isClicked?'#238bfe':'#999999'};
