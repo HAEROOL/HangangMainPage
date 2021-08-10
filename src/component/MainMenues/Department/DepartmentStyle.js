@@ -10,18 +10,20 @@ export const DepartmentBrowserWrapper = styled.div`
 export const Scroll = styled.div`
     @media screen and (max-width : 574px){
         overflow-x : scroll;
-        height : 110px;
+        height : 120px;
     }
-` 
-export const DepartmentListWrapper = styled.div`
+`
+export const DepartmentListWrapper = styled.ul`
     display : flex;
     justify-content : space-between;
+    padding : 0;
+    margin : 0;
     @media screen and (max-width : 574px){
         width : 1100px;
         padding : 0 10px;
     }
 `
-export const Department = styled.a`
+export const Department = styled.li`
     display : flex;
     align-items : flex-end;
     cursor : pointer;
@@ -36,6 +38,7 @@ export const Department = styled.a`
         height : 100px;
         background-size: 100px 100px;
         font-size : 12px;
+        background-size: 100px 100px;
     }
 `
 export const DepartmentName = styled.div`
