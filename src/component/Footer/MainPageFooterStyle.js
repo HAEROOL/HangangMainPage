@@ -6,6 +6,8 @@ export const MainPageFooterWrapper = styled.div`
     background : #3e3e3e;
     @media screen and (max-width : 574px){
         height : 72px;
+        position : fixed;
+        bottom:0;
     }
 `
 export const FooterContentsWrapper = styled.div`
@@ -58,10 +60,12 @@ export const HangangMenu = styled.a`
     cursor : pointer;
     @media screen and (max-width : 574px){
         display : flex;
+        flex-direction : column;
         height : 100%;
         width : 18%;
+        justify-content : center;
         align-items : center;
-        margin-bottom : ${props => props.isClicked?'2px':''};
+        margin-top : ${props => props.isClicked?'':'2px;'};
         border-top : ${props => props.isClicked?'#238bfe 2px solid':''};
         color : ${props => props.isClicked?'#238bfe':'#999999'};
         font-size: 11px;
@@ -107,4 +111,9 @@ export const CopyRight = styled.div`
     @media screen and (max-width : 574px){
         display : None;
     }
+`
+export const MenuIcon = styled.div`
+    background : url(${props => props.url});
+    width : 24px;
+    height : 24px;
 `
