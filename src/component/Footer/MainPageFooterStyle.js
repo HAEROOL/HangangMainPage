@@ -30,7 +30,26 @@ export const HangangMenuWrapper = styled.div`
     align-items : center;
     @media screen and (max-width : 574px){
         width : 100%;
+        height : 100%;
         justify-content : space-around;
+    }
+`
+export const MenuWrapper = styled.div`
+    width : 295px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    @media screen and (max-width : 574px){
+        display : None;
+    }
+`
+export const MobileMenuWrapper = styled.div`
+    display : None;
+    @media screen and (max-width : 574px){
+        display : flex;
+        width : 100%;
+        height : 100%;
+        justify-content : space-between;
     }
 `
 export const HangangMenu = styled.a`
@@ -38,7 +57,14 @@ export const HangangMenu = styled.a`
     font-size : 15px;
     cursor : pointer;
     @media screen and (max-width : 574px){
-        color : black;
+        display : flex;
+        height : 100%;
+        width : 18%;
+        align-items : center;
+        margin-bottom : ${props => props.isClicked?'2px':''};
+        border-top : ${props => props.isClicked?'#238bfe 2px solid':''};
+        color : ${props => props.isClicked?'#238bfe':'#999999'};
+        font-size: 11px;
     }
 `
 
