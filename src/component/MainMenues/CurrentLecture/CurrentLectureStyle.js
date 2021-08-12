@@ -41,3 +41,14 @@ export const Professor = styled.span`
 export const AverageScore = styled.div`
     font-size : 18px;
 `
+export const ComponentName = styled.div`
+    font-family : NotoSansKRLight;
+    font-size : 16px;
+    text-align : left;
+    margin-bottom : 16px;
+    @media screen and (max-width : 574px){
+        width : 90%;
+        margin : 0 auto;
+        margin-bottom : 16px;
+    }
+`

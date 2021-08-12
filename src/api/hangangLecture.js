@@ -7,11 +7,11 @@ export const getLecturesApi = createApi({
     }),
     endpoints:(build)=>({
         getLectures:build.query({
-            query:(departmentId) => ({url:`lectures/${departmentId}`})
+            query:(departmentId) => ({url:`lectures?departmentId=${departmentId}`})
         })
     })
 })
 
 export const {
-    useGetLectures
+    useGetLecturesQuery
 } = getLecturesApi
