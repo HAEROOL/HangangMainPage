@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import MainPage from './pages/MainPage';
 import MainPageFooter from './component/Footer/MainPageFooter'
 import './assets/fonts/font.css';
-
+import { useGetLectures } from './api/hangangLecture';
 const TotalPage = styled.div`
   display : flex;
   flex-direction : column;
@@ -17,6 +17,7 @@ const TotalPage = styled.div`
 
 `
 function App() {
+  const {data, error, isLoading} = useGetLectures(10)
   return (
       <TotalPage>
         <Banner/>
