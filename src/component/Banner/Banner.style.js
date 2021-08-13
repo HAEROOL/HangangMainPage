@@ -66,3 +66,11 @@ export const LoginMenu = styled.a`
         display : None;
     }
 `
+export const DevideLine = styled.div`
+    width : 1px;
+    height : 15px;
+    background : #dadada;
+    @media screen and (max-width : 574px){
+        display : None;
+    }
+`
