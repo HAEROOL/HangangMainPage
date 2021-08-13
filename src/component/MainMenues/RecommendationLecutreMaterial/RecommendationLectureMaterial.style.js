@@ -23,3 +23,14 @@ export const LectureMaterial = styled.div`
         color : #999999;
     }
 `
+export const ComponentName = styled.div`
+    font-family : NotoSansKRLight;
+    font-size : 16px;
+    text-align : left;
+    margin-bottom : 16px;
+    @media screen and (max-width : 574px){
+        width : 90%;
+        margin : 0 auto;
+        margin-bottom : 16px;
+    }
+`
