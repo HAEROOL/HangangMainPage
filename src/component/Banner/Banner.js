@@ -1,16 +1,8 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
-import {PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./BannerStyle'
+import {DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
 import {ReactComponent as HangangLogo} from '../../assets/images/banner/HangangLogo.svg'
-const menuList = ['홈','강의평','강의자료','시간표']
-const DevideLine = styled.div`
-    width : 1px;
-    height : 15px;
-    background : #dadada;
-    @media screen and (max-width : 574px){
-        display : None;
-    }
-`
+import {menuList} from './static'
+
 function Banner(){
     const [nowPage,setPage] = useState(0)
     const ClickMainMenu = (e) =>{
