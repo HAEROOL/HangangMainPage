@@ -89,11 +89,14 @@ export const FooterMenu = styled.a`
     border : 1px solid #9fa9b3;
     cursor : pointer;
 `
-export const Logos = styled.a`
+export const Logos = styled.div`
     display : flex;
     width : 72px;
     justify-content : space-between;
     cursor : pointer;
+`
+export const Logo = styled.a`
+
 `
 export const LogosMenuContainer = styled.div`
     display : flex;
@@ -115,5 +118,5 @@ export const CopyRight = styled.div`
 export const MenuIcon = styled.div`
     background : url(${props => props.url});
     width : 24px;
-    height : 24px;
+    height :24px;
 `
