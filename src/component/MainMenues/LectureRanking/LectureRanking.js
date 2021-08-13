@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ComponentName, DepartmentName, DepartmentSelector, LectureRankingHeader, LectureRankingWrapper, RankingWrapper } from './LectureRankingStyle'
+import { ComponentName, DepartmentName, DepartmentSelector, LectureRankingHeader, LectureRankingWrapper, RankingWrapper } from './LectureRanking.style'
 import {useGetLecturesQuery} from '../../../api/hangangLecture'
 import {DepartmentList} from './static'
 function LectureRanking(){
