@@ -3,12 +3,11 @@ import {ReactComponent as HangangFooterLogo} from '../../assets/images/footer/Ha
 import {ReactComponent as FacebookLogo} from '../../assets/images/footer/FacebookLogo.svg'
 import {ReactComponent as HomeLogo} from '../../assets/images/footer/HomeLogo.svg'
 import { MenuIcon,MobileMenuWrapper,MenuWrapper, CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooter.style'
-import {hangangMenuList,hangangMobileMenuList, UnclickedImageList,ClickedImageList,footerMenuList} from './static'
+import {hangangMenuList,hangangMobileMenuList, UnclickedImageList,ClickedImageList,footerMenuList, linkList} from './static'
 function MainPageFooter(){
     const [nowMenu,setMenu] = useState(0)
     const ClickMenu = (e) =>{
         if (nowMenu !== e.target.textContent){
-            console.log(e)
             setMenu(hangangMobileMenuList.indexOf(e.target.textContent))
         }
     }
@@ -30,7 +29,7 @@ function MainPageFooter(){
                 <LogosMenuContainer>
                     <HangangFooterLogo/>
                     <FooterMenuWrapper>
-                        {footerMenuList.map((menu, index) => <FooterMenu key={index}>{menu}</FooterMenu>)}
+                        {footerMenuList.map((menu, index) => <FooterMenu key={index} href={linkList[footerMenuList.indexOf(menu)]} target='_blank'>{menu}</FooterMenu>)}
                     </FooterMenuWrapper>
                     <Logos>
                         <FacebookLogo/>

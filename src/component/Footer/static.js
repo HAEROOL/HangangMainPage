@@ -14,3 +14,9 @@ export const hangangMobileMenuList = ['홈','강의평','강의자료','시간�
 export const UnclickedImageList = [Home,Review,LectureMaterial,Timetable,MyPage]
 export const ClickedImageList = [ClickedHome,ClickedReview,ClickedLectureMaterial,ClickedTimetable,ClickedMyPage]
 export const footerMenuList = ['BCSD Lab 바로가기','코리아텍 바로가기','아우누리 바로가기','개인정보 처리방침']
+export const linkList = [
+    'https://bcsdlab.com/',
+    'https://portal.koreatech.ac.kr/login.jsp',
+    'https://portal.koreatech.ac.kr/login.jsp',
+    ''
+    ]
