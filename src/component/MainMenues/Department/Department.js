@@ -1,5 +1,5 @@
 import React from 'react'
-import { DepartmentBrowserWrapper,DepartmentListWrapper, Department, DepartmentName, ComponentName, Scroll } from './DepartmentStyle'
+import { DepartmentBrowserWrapper,DepartmentListWrapper, Department, DepartmentName, ComponentName, Scroll } from './Department.style'
 import {DepartmentList,DepartmentNameList} from './static'
 function DepartmentBrowser(){
     return (

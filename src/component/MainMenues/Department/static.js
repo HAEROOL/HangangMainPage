@@ -1,5 +1,3 @@
-import React from 'react'
-import { DepartmentBrowserWrapper,DepartmentListWrapper, Department, DepartmentName, ComponentName, Scroll } from './DepartmentStyle'
 import Elective from '../../../assets/images/Department/Elective.jpg'
 import HRD from '../../../assets/images/Department/HRD.jpg'
 import MechanicalEngineerging from '../../../assets/images/Department/MechanicalEngineering.jpg'
