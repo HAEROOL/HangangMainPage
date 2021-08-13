@@ -1,6 +1,5 @@
 import React from 'react'
-import { ComponentName } from '../LectureRanking/LectureRankingStyle'
-import { CurrentLectureWrapper,LectureList, Lecture, LectureNameAndProfessor, Professor, AverageScore, } from './CurrentLectureStyle'
+import { ComponentName,CurrentLectureWrapper,LectureList, Lecture, LectureNameAndProfessor, Professor, AverageScore, } from './CurrentLecture.style'
 const currentLectureList = JSON.parse(localStorage.getItem('recentlyViewedLectures'))
 function CurrentLecture(){
     try{

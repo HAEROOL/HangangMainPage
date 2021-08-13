@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import MainPage from './pages/MainPage';
 import MainPageFooter from './component/Footer/MainPageFooter'
 import './assets/fonts/font.css';
-
 const TotalPage = styled.div`
   display : flex;
   flex-direction : column;
@@ -13,8 +12,7 @@ const TotalPage = styled.div`
   min-width : 1280px;
   @media screen and (max-width : 574px){
     min-width : 1px;
-}
-
+  }
 `
 function App() {
   return (
