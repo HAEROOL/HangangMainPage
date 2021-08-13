@@ -1,5 +1,5 @@
 import React from 'react'
-import {ComponentName,TimeTableWrapper,LectureList,Lecture, Professor, EvaluationButton, LectureNameAndProfessor} from './TimeTableStyle'
+import {ComponentName,TimeTableWrapper,LectureList,Lecture, Professor, EvaluationButton, LectureNameAndProfessor} from './TimeTable.style'
 const lectureList = ['가가가가가가','나나나나나나','다다다다다','라라라라']
 function TimeTable(){
     return (
