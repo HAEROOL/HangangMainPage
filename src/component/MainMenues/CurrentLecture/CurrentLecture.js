@@ -1,24 +1,32 @@
 import React from 'react'
 import { ComponentName } from '../LectureRanking/LectureRankingStyle'
 import { CurrentLectureWrapper,LectureList, Lecture, LectureNameAndProfessor, Professor, AverageScore, } from './CurrentLectureStyle'
-const lectureList = ['가가가가가가','나나나나나나','다다다다다','라라라라']
+const currentLectureList = JSON.parse(localStorage.getItem('recentlyViewedLectures'))
 function CurrentLecture(){
-    return (
-        <CurrentLectureWrapper>
-            <ComponentName>최근 본 강의</ComponentName>
-            <LectureList>
-                {lectureList.map((lecture, id) => 
-                        <Lecture key={id}>
-                            <LectureNameAndProfessor>
-                                {lecture}
-                                <Professor>미정</Professor>
-                            </LectureNameAndProfessor>
-                            <AverageScore>0.0</AverageScore>
-                        </Lecture>
-                    )}
-            </LectureList>
-        </CurrentLectureWrapper>
-    )
+    try{
+        return (
+            <CurrentLectureWrapper>
+                <ComponentName>최근 본 강의</ComponentName>
+                <LectureList>
+                    {currentLectureList.map((lecture, id) => 
+                            <Lecture key={id}>
+                                <LectureNameAndProfessor>
+                                    {lecture.name}
+                                    <Professor>{lecture.professor}</Professor>
+                                </LectureNameAndProfessor>
+                                <AverageScore>{parseFloat(lecture.total_rating).toFixed(1)}</AverageScore>
+                            </Lecture>
+                        )}
+                </LectureList>
+            </CurrentLectureWrapper>
+        )}catch(e){
+            return (
+                <CurrentLectureWrapper>
+                    <ComponentName>최근 본 강의</ComponentName>
+                    <LectureList> </LectureList>
+                </CurrentLectureWrapper>
+            )}
+
 }
 
 export default CurrentLecture
