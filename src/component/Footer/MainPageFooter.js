@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {ReactComponent as HangangFooterLogo} from '../../assets/images/footer/HangangLogo_gray.svg'
 import {ReactComponent as FacebookLogo} from '../../assets/images/footer/FacebookLogo.svg'
 import {ReactComponent as HomeLogo} from '../../assets/images/footer/HomeLogo.svg'
-import { MenuIcon,MobileMenuWrapper,MenuWrapper, CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooterStyle'
+import { MenuIcon,MobileMenuWrapper,MenuWrapper, CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooter.style'
 import {hangangMenuList,hangangMobileMenuList, UnclickedImageList,ClickedImageList,footerMenuList} from './static'
 function MainPageFooter(){
     const [nowMenu,setMenu] = useState(0)
