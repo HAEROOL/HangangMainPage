@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ComponentName, DepartmentName, DepartmentSelector, LectureRankingHeader, LectureRankingWrapper, RankingWrapper } from './LectureRankingStyle'
 import {useGetLecturesQuery} from '../../../api/hangangLecture'
-const DepartmentList = ['교양','HRD','기계','디자인·건축','메카','에신화','산경','전전통','컴공','융합']
+import {DepartmentList} from './static'
 function LectureRanking(){
     const [selectedDepartment,setDepartment] = useState(10)
     const {data, error, isLoading} = useGetLecturesQuery(selectedDepartment)
