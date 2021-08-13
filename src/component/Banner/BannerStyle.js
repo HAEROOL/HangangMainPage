@@ -47,6 +47,7 @@ export const MainMenu = styled.a`
     color : #238bfe;
     font-size : 17px;
     cursor : pointer;
+    margin-bottom : ${props=>props.isClicked?'-2px':''};
     border-bottom : ${props=>props.isClicked?'#238bfe 2px solid;':''};
     @media screen and (max-width : 574px){
         display : None;
