@@ -1,6 +1,5 @@
 import React from 'react'
-import { LectureMaterialWrapper,LectureMaterial} from './RecommendationLectureMaterialStyle'
-import { ComponentName } from '../LectureRanking/LectureRankingStyle'
+import { ComponentName,LectureMaterialWrapper,LectureMaterial} from './RecommendationLectureMaterial.style'
 function RecommendationMaterial(){
     return(
         <LectureMaterialWrapper>
