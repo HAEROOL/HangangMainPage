@@ -54,18 +54,31 @@ export const DepartmentName = styled.div`
     border-bottom : ${props => props.isClicked?'#ffab2e 2px solid':''}
 `
 
-export const LectureWrapper = styled.div`
+export const LectureWrapper = styled.ul`
+    padding : 0;
+    margin : 0;
     display : flex;
     flex-direction : column;
     justify-content : space-around;
     width : 100%;
     height : 353px;
+    list-style:none;
+`
+export const LectureContainer = styled.li`
+    width : 100%;
+    height : 20%;
+    border-bottom : 1px solid #eeeeee;
+    &:last-child{
+        border-bottom: 0px;
+    }
 `
 export const Lecture = styled.div`
     margin : 0 auto;
     width : 90%;
+    height : 100%;
     display : flex;
     justify-content : space-between;
+    align-items : center;
 `
 export const LectureNameAndProfessor = styled.div`
     display : flex;

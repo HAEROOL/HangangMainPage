@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LectureAndOrder,LectureOrder,AverageScore, Professor, LectureNameAndProfessor,Lecture,LectureWrapper,ComponentName, DepartmentName, DepartmentSelector, LectureRankingHeader, LectureRankingWrapper, RankingWrapper } from './LectureRanking.style'
+import { LectureAndOrder,LectureOrder,AverageScore, Professor, LectureNameAndProfessor,Lecture,LectureWrapper,ComponentName, DepartmentName, DepartmentSelector, LectureRankingHeader, LectureRankingWrapper, RankingWrapper, LectureContainer } from './LectureRanking.style'
 import {useGetLecturesQuery} from '../../../api/hangangLecture'
 import {DepartmentList} from './static'
 function LectureRanking(){
@@ -23,24 +23,26 @@ function LectureRanking(){
                 {error ? (
                     <>예기치 못한 오류가 발생했습니다. 새로고침해주세요.</>
                 ) : isLoading ? (
-                    <></>
+                    <>Loading...</>
                 ) : data ? (
                     <>
-                    {console.log(data.result)}
                     {data.result.map(lecture => (
-                        <Lecture key={lecture.id}>
-                            <LectureAndOrder>
-                                <LectureOrder>
-                                    0{data.result.indexOf(lecture)+1}
-                                </LectureOrder>
-                                <LectureNameAndProfessor>
-                                    {lecture.name}
-                                    <Professor>{lecture.professor}</Professor>
-                                </LectureNameAndProfessor>
-                            </LectureAndOrder>
-                            
-                            <AverageScore>{parseFloat(lecture.total_rating).toFixed(1)}</AverageScore>
-                        </Lecture>
+                        <LectureContainer key={lecture.id}>
+                            <Lecture>
+                                <LectureAndOrder>
+                                    <LectureOrder>
+                                        0{data.result.indexOf(lecture)+1}
+                                    </LectureOrder>
+                                    <LectureNameAndProfessor>
+                                        {lecture.name}
+                                        <Professor>{lecture.professor}</Professor>
+                                    </LectureNameAndProfessor>
+                                </LectureAndOrder>
+                                
+                                <AverageScore>{parseFloat(lecture.total_rating).toFixed(1)}</AverageScore>
+                            </Lecture>
+                        </LectureContainer>
+                        
                         ))}
                     </>
                 ) : null}
