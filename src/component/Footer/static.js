@@ -16,7 +16,7 @@ export const ClickedImageList = [ClickedHome,ClickedReview,ClickedLectureMateria
 export const footerMenuList = ['BCSD Lab 바로가기','코리아텍 바로가기','아우누리 바로가기','개인정보 처리방침']
 export const linkList = [
     'https://bcsdlab.com/',
-    'https://portal.koreatech.ac.kr/login.jsp',
+    'https://www.koreatech.ac.kr/kor/Main.do',
     'https://portal.koreatech.ac.kr/login.jsp',
     '/',
     'https://www.facebook.com/bcsdlab/'
