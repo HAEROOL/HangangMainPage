@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import MainPage from './pages/MainPage';
 import MainPageFooter from './component/Footer/MainPageFooter'
 import './assets/fonts/font.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import TestComp from './test';
 const TotalPage = styled.div`
   display : flex;
   flex-direction : column;
@@ -17,8 +19,11 @@ const TotalPage = styled.div`
 function App() {
   return (
       <TotalPage>
+        <Router>
         <Banner/>
-        <MainPage/>
+          <Route exact path='/' component={MainPage}/>
+          <Route exact path='/dummy' component={TestComp}/>
+        </Router>
         <MainPageFooter/>
       </TotalPage>
 
