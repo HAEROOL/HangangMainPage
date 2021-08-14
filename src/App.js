@@ -1,20 +1,33 @@
 import Banner from './component/Banner/Banner'
 import styled from 'styled-components';
-import MainPageIllust from './component/Banner/MainPageIllust';
+import MainPage from './pages/MainPage';
+import MainPageFooter from './component/Footer/MainPageFooter'
+import './assets/fonts/font.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import TestComp from './test';
 const TotalPage = styled.div`
-  width : 100vw;
-  height : 100vh;
   display : flex;
   flex-direction : column;
-  // justify-content : center;
-  align-items : center;
+  width : 100%;
+  font-family : NotoSansKRLight;
+  margin : 0 auto;
+  min-width : 1280px;
+  @media screen and (max-width : 574px){
+    min-width : 300px;
+  }
 `
 function App() {
   return (
-    <TotalPage>
-      <Banner/>
-      <MainPageIllust/>
-    </TotalPage>
+      <TotalPage>
+        <Router>
+          <Banner/>
+          <Route exact path='/' component={MainPage}/>
+          <Route exact path='/dummy' component={TestComp}/>
+          <MainPageFooter/>
+        </Router>
+        
+      </TotalPage>
+
   );
 }
 

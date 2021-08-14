@@ -3,25 +3,35 @@ import CurrentLecture from './CurrentLecture/CurrentLecture'
 import TimeTable from './TimeTable/TimeTable'
 import RecommendationLectureMaterial from './RecommendationLecutreMaterial/RecommendationLectureMaterial'
 import LectureRanking from './LectureRanking/LectureRanking'
-import { FirstMaterial, FourthMaterial, MainPageMenuWrapper, SecondMaterial, ThirdMaterial } from './MainPageMenuesStyle'
+import { MainMenuBrowserWrapper,FifthMaterial, FirstFourthThirdFifthWrapper, FirstMaterial, FourthMaterial, FourthThirdFifthWrapper, MainPageMenuWrapper, SecondMaterial, ThirdMaterial, ThridFifthWrapper } from './MainPageMenues.style'
+import DepartmentBrowser from './Department/Department'
 function MainPageMenu(){
     return(
         <MainPageMenuWrapper>
-            <FirstMaterial>
-                <LectureRanking/>
-            </FirstMaterial>
-            <SecondMaterial>
-                <RecommendationLectureMaterial/>
-            </SecondMaterial>
-            <ThirdMaterial>
-                <TimeTable/>
-            </ThirdMaterial>
-            <FourthMaterial>
-                <CurrentLecture/>
-            </FourthMaterial>
-            
-            
-            
+            <MainMenuBrowserWrapper>
+                <FirstFourthThirdFifthWrapper>
+                    <SecondMaterial>
+                        <DepartmentBrowser/>
+                    </SecondMaterial>
+                    <FirstMaterial>
+                        <LectureRanking/>
+                    </FirstMaterial>
+                    <FourthThirdFifthWrapper>
+                        <FourthMaterial>
+                            <RecommendationLectureMaterial/>
+                        </FourthMaterial>
+                        <ThridFifthWrapper>
+                            <ThirdMaterial>
+                                <TimeTable/>
+                            </ThirdMaterial>
+                            <FifthMaterial>
+                                <CurrentLecture/>
+                            </FifthMaterial>
+                        </ThridFifthWrapper>
+                    </FourthThirdFifthWrapper>
+                </FirstFourthThirdFifthWrapper>
+            </MainMenuBrowserWrapper>
+
         </MainPageMenuWrapper>
     )
 }

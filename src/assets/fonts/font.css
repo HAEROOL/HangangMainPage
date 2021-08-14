@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "NotoSansKRMedium";
+    src : url('./NotoSansKR-Medium.otf')
+}
+
+@font-face {
+    font-family: "NotoSansKRLight";
+    src : url('./NotoSansKR-Regular.otf')
+}
+
+@font-face{
+    font-family : "NanumSquareRound";
+    src : url('./NanumSquareRoundOTFB.otf')
+}
