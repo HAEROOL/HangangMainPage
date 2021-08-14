@@ -1,22 +1,28 @@
-import React from 'react'
-import {ComponentName,TimeTableWrapper,LectureList,Lecture, Professor, EvaluationButton, LectureNameAndProfessor} from './TimeTable.style'
-const lectureList = ['가가가가가가','나나나나나나','다다다다다','라라라라']
+import React, { useState } from 'react'
+import {NoTimeTable,GoTimeTableButton,ComponentName,TimeTableWrapper,LectureList,Lecture, Professor, EvaluationButton, LectureNameAndProfessor} from './TimeTable.style'
 function TimeTable(){
+    const [lectureList,setLecture] = useState(null)
     return (
         <TimeTableWrapper>
             <ComponentName>내 시간표</ComponentName>
                 <LectureList>
-                    {lectureList.map((lecture, id) => 
-                        <Lecture key={id}>
-                            <LectureNameAndProfessor>
-                                {lecture}
-                                <Professor>미정</Professor>
-                            </LectureNameAndProfessor>
-                            <EvaluationButton>평가하기</EvaluationButton>
-                        </Lecture>
+                    {lectureList?(
+                        lectureList.map((lecture, id) => 
+                            <Lecture key={id}>
+                                <LectureNameAndProfessor>
+                                    {lecture}
+                                    <Professor>미정</Professor>
+                                </LectureNameAndProfessor>
+                                <EvaluationButton>평가하기</EvaluationButton>
+                            </Lecture>
+                        )
+                    ):(
+                        <NoTimeTable>
+                            아직 작성한 시간표가 없습니다.
+                            <GoTimeTableButton>작성하러가기</GoTimeTableButton>
+                        </NoTimeTable>
                     )}
                 </LectureList>
-            
         </TimeTableWrapper>
     )
 }

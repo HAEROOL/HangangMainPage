@@ -30,7 +30,7 @@ export const ComponentName = styled.div`
     margin-bottom : 16px;
     @media screen and (max-width : 574px){
         width : 90%;
-        margin : 0 auto;
+        margin : 0;
         margin-bottom : 16px;
     }
 `
