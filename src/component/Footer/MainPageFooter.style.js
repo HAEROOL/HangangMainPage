@@ -54,7 +54,7 @@ export const MobileMenuWrapper = styled.div`
         justify-content : space-between;
     }
 `
-export const HangangMenu = styled.a`
+export const HangangMenu = styled.div`
     color : #ffffff;
     font-size : 15px;
     cursor : pointer;
@@ -88,6 +88,7 @@ export const FooterMenu = styled.a`
     border-radius : 20px;
     border : 1px solid #9fa9b3;
     cursor : pointer;
+    text-decoration: none;
 `
 export const Logos = styled.div`
     display : flex;

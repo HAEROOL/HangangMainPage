@@ -18,6 +18,6 @@ export const linkList = [
     'https://bcsdlab.com/',
     'https://portal.koreatech.ac.kr/login.jsp',
     'https://portal.koreatech.ac.kr/login.jsp',
-    'null',
+    '/',
     'https://www.facebook.com/bcsdlab/'
     ]

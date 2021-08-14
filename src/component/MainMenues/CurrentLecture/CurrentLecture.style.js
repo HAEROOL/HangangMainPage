@@ -8,18 +8,16 @@ export const CurrentLectureWrapper = styled.div`
 `
 export const LectureList = styled.ul`
     width : 272px;
-    height : 276px;
-    padding : 0;
+    height : 236px;
+    padding : 20px 0;
     margin : 0;
     display : flex;
     flex-direction : column;
-    justify-content : space-around;
     list-style : none;
     border-radius : 8px;
     border : solid 1px #eeeeee;
     @media screen and (max-width:574px){
         width : 100%;
-        justify-content : space-around;
     }
 `
 export const LectureNameAndProfessor = styled.div`
@@ -29,6 +27,7 @@ export const LectureNameAndProfessor = styled.div`
 export const Lecture = styled.li`
     display : flex;
     width : 90%;
+    height : 25%;
     margin : 0 auto;
     justify-content : space-between;
     align-items : center;

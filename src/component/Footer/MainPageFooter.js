@@ -4,6 +4,8 @@ import {ReactComponent as FacebookLogo} from '../../assets/images/footer/Faceboo
 import {ReactComponent as HomeLogo} from '../../assets/images/footer/HomeLogo.svg'
 import { Logo,MenuIcon,MobileMenuWrapper,MenuWrapper, CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooter.style'
 import {hangangMenuList,hangangMobileMenuList, UnclickedImageList,ClickedImageList,footerMenuList, linkList} from './static'
+import {Link} from 'react-router-dom'
+
 function MainPageFooter(){
     const [nowMenu,setMenu] = useState(0)
     const ClickMenu = (e) =>{
@@ -17,14 +19,18 @@ function MainPageFooter(){
             <FooterContentsWrapper>
                 <HangangMenuWrapper>
                     <MenuWrapper>
-                        {hangangMenuList.map((menu, index) => <HangangMenu key={index}>{menu}</HangangMenu>)}
+                        {hangangMenuList.map((menu, id) =>
+                        <Link to={'/dummy'} key={id} style={{textDecoration:'none'}}>
+                            <HangangMenu >{menu}</HangangMenu>
+                        </Link>)}
                     </MenuWrapper>
                     <MobileMenuWrapper>
-                        {hangangMobileMenuList.map((menu, index) => 
-                            <HangangMenu key={index} id={menu} isClicked={nowMenu===hangangMobileMenuList.indexOf(menu)} onClick={(e)=>ClickMenu(e)}>
+                        {hangangMobileMenuList.map((menu, id) =>
+                            <HangangMenu  key={id} id={menu} isClicked={nowMenu===hangangMobileMenuList.indexOf(menu)} onClick={(e)=>ClickMenu(e)}>
                                 <MenuIcon id={menu} url={nowMenu===hangangMobileMenuList.indexOf(menu)?ClickedImageList[hangangMobileMenuList.indexOf(menu)]:UnclickedImageList[hangangMobileMenuList.indexOf(menu)]}/>
                                 {menu}
-                            </HangangMenu>)}
+                            </HangangMenu>
+                            )}
                     </MobileMenuWrapper>
                 </HangangMenuWrapper>
                 <LogosMenuContainer>

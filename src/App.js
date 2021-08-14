@@ -13,18 +13,19 @@ const TotalPage = styled.div`
   margin : 0 auto;
   min-width : 1280px;
   @media screen and (max-width : 574px){
-    min-width : 1px;
+    min-width : 300px;
   }
 `
 function App() {
   return (
       <TotalPage>
         <Router>
-        <Banner/>
+          <Banner/>
           <Route exact path='/' component={MainPage}/>
           <Route exact path='/dummy' component={TestComp}/>
+          <MainPageFooter/>
         </Router>
-        <MainPageFooter/>
+        
       </TotalPage>
 
   );
