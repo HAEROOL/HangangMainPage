@@ -88,7 +88,8 @@ export const NoTimeTable = styled.div`
     width : 90%;
     justify-content : space-between;
     align-items : center;
-    font-size : 14px;
+    font-size : 12px;
+    color : #828282;
     margin : 0 auto;
     @media screen and (max-width : 574px){
         font-size : 12px;
