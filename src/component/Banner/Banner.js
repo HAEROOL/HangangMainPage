@@ -18,9 +18,9 @@ function Banner(){
                     <Link to={'/'}>
                         <HangangLogo style={{cursor:'pointer'}} onClick={()=>ClickLogo()}/>
                     </Link>
-                    {menuList.map((menu,index) => 
-                    <Link style={{textDecoration:'none'}}to={menuLinkList[menuList.indexOf(menu)]}>
-                        <MainMenu key={index} onClick={(e) => ClickMainMenu(e)} isClicked={nowPage===menuList.indexOf(menu)}>
+                    {menuList.map((menu,id) => 
+                    <Link style={{textDecoration:'none'}}to={menuLinkList[menuList.indexOf(menu)]} key={id}>
+                        <MainMenu onClick={(e) => ClickMainMenu(e)} isClicked={nowPage===menuList.indexOf(menu)}>
                                 {menu}
                             </MainMenu>
                     </Link>)}
@@ -32,7 +32,7 @@ function Banner(){
                 </LoginMenuWrapper>
             </MenuWrapper>
         </PageHeader>
-        
+
     )
 }
 

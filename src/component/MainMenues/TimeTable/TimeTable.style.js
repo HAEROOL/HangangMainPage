@@ -68,7 +68,7 @@ export const ComponentName = styled.div`
         margin-bottom : 16px;
     }
 `
-export const GoTimeTableButton = styled.a`
+export const GoTimeTableButton = styled.div`
     display : flex;
     justify-content : center;
     align-items : center;

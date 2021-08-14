@@ -1,6 +1,7 @@
 import React from 'react'
 import { DepartmentBrowserWrapper,DepartmentListWrapper, Department, DepartmentName, ComponentName, Scroll } from './Department.style'
 import {DepartmentList,DepartmentNameList} from './static'
+import { Link } from 'react-router-dom'
 function DepartmentBrowser(){
     return (
         <DepartmentBrowserWrapper>
@@ -8,13 +9,14 @@ function DepartmentBrowser(){
             <Scroll>
             <DepartmentListWrapper>
                     {DepartmentList.map((department,id) =>
-                        <Department url={department} key={id}>
+                    <Link to='/dummy'  style={{textDecoration:'none'}} key={id}>
+                        <Department url={department}>
                             <DepartmentName>{DepartmentNameList[DepartmentList.indexOf(department)]}</DepartmentName>
                         </Department>
+                    </Link>
                     )}
             </DepartmentListWrapper>
             </Scroll>
-            
         </DepartmentBrowserWrapper>
     )
 }
