@@ -49,6 +49,7 @@ export const MainMenu = styled.a`
     cursor : pointer;
     margin-bottom : ${props=>props.isClicked?'-2px':''};
     border-bottom : ${props=>props.isClicked?'#238bfe 2px solid;':''};
+    
     @media screen and (max-width : 574px){
         display : None;
     }
@@ -62,6 +63,14 @@ export const LoginMenu = styled.a`
     color : #238bfe;
     font-size : 17px;
     cursor : pointer;
+    @media screen and (max-width : 574px){
+        display : None;
+    }
+`
+export const DevideLine = styled.div`
+    width : 1px;
+    height : 15px;
+    background : #dadada;
     @media screen and (max-width : 574px){
         display : None;
     }
