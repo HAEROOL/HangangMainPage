@@ -1,5 +1,5 @@
 import Home from '../../assets/images/footer/footer_reponsive/Home_gray.svg'
-import ClickedHome from '../../assets/images/footer/footer_reponsive/Home.svg'
+import ClickedHome from '../../assets/images/footer/footer_reponsive/home.svg'
 import Review from '../../assets/images/footer/footer_reponsive/Review_gray.svg'
 import ClickedReview from '../../assets/images/footer/footer_reponsive/Review.svg'
 import LectureMaterial from '../../assets/images/footer/footer_reponsive/LectureMaterial_gray.svg'
