@@ -1,5 +1,27 @@
 import styled from 'styled-components'
-
+import {NavLink} from 'react-router-dom'
+export const StyledLink = styled(NavLink)`
+    text-decoration : none;
+    color : #999999;
+    @media screen and (max-width : 574px){
+        display : flex;
+        flex-direction : column;
+        height : 100%;
+        justify-content : center;
+        align-items : center;
+        color : #999999;
+        font-size: 11px;
+        width : 20%;
+        &.selected{
+            color : #238bfe;
+            border-top : #238bfe 2px solid;
+            margin-top : -2px;
+            path{
+                stroke:#238bfe;
+            }
+        }
+    }
+`
 export const MainPageFooterWrapper = styled.div`
     width : 100%;
     height : 203px;
@@ -58,18 +80,6 @@ export const HangangMenu = styled.div`
     color : #ffffff;
     font-size : 15px;
     cursor : pointer;
-    @media screen and (max-width : 574px){
-        display : flex;
-        flex-direction : column;
-        height : 100%;
-        width : 18%;
-        justify-content : center;
-        align-items : center;
-        margin-top : ${props => props.isClicked?'':'2px;'};
-        border-top : ${props => props.isClicked?'#238bfe 2px solid':''};
-        color : ${props => props.isClicked?'#238bfe':'#999999'};
-        font-size: 11px;
-    }
 `
 
 export const FooterMenuWrapper = styled.div`

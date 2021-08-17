@@ -1,48 +1,75 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {ReactComponent as HangangFooterLogo} from '../../assets/images/footer/HangangLogo_gray.svg'
 import {ReactComponent as FacebookLogo} from '../../assets/images/footer/FacebookLogo.svg'
 import {ReactComponent as HomeLogo} from '../../assets/images/footer/HomeLogo.svg'
-import { Logo,MenuIcon,MobileMenuWrapper,MenuWrapper, CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooter.style'
-import {hangangMenuList,hangangMobileMenuList, UnclickedImageList,ClickedImageList,footerMenuList, linkList} from './static'
-import {Link} from 'react-router-dom'
+import { StyledLink,Logo,MobileMenuWrapper,MenuWrapper, CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooter.style'
+import { FOOTER_MENU_LIST, FOOTER_LINK_LIST} from '../../static/footer/menuList'
+import {ReactComponent as HomeIcon} from '../../assets/images/footer/footer_reponsive/Home_gray.svg'
+import {ReactComponent as ReviewIcon} from '../../assets/images/footer/footer_reponsive/Review_gray.svg'
+import {ReactComponent as LectureMaterialIcon} from '../../assets/images/footer/footer_reponsive/LectureMaterial_gray.svg'
+import {ReactComponent as TimetableIcon} from '../../assets/images/footer/footer_reponsive/Timetable_gray.svg'
+import {ReactComponent as MyPageIcon} from '../../assets/images/footer/footer_reponsive/MyPage_gray.svg'
 
 function MainPageFooter(){
-    const [nowMenu,setMenu] = useState(0)
-    const ClickMenu = (e) =>{
-        e.stopPropagation();
-        if (nowMenu !== e.target.id){
-            setMenu(hangangMobileMenuList.indexOf(e.target.id))
-        }
-    }
     return (
         <MainPageFooterWrapper>
             <FooterContentsWrapper>
                 <HangangMenuWrapper>
                     <MenuWrapper>
-                        {hangangMenuList.map((menu, id) =>
-                        <Link to={'/dummy'} key={id} style={{textDecoration:'none'}}>
-                            <HangangMenu >{menu}</HangangMenu>
-                        </Link>)}
+                        <StyledLink to='/'>
+                            <HangangMenu>
+                                홈
+                            </HangangMenu>
+                        </StyledLink>
+                        <StyledLink to='/lectures'>
+                            <HangangMenu>
+                                강의평
+                            </HangangMenu>
+                        </StyledLink>
+                        <StyledLink to='/resources'>
+                            <HangangMenu>
+                                강의자료
+                            </HangangMenu>
+                        </StyledLink>
+                        <StyledLink to='/timetable'>
+                            <HangangMenu>
+                                시간표
+                            </HangangMenu>
+                        </StyledLink>
                     </MenuWrapper>
                     <MobileMenuWrapper>
-                        {hangangMobileMenuList.map((menu, id) =>
-                            <HangangMenu  key={id} id={menu} isClicked={nowMenu===hangangMobileMenuList.indexOf(menu)} onClick={(e)=>ClickMenu(e)}>
-                                <MenuIcon id={menu} url={nowMenu===hangangMobileMenuList.indexOf(menu)?ClickedImageList[hangangMobileMenuList.indexOf(menu)]:UnclickedImageList[hangangMobileMenuList.indexOf(menu)]}/>
-                                {menu}
-                            </HangangMenu>
-                            )}
+                        <StyledLink activeClassName='selected' exact to='/'>
+                            <HomeIcon />
+                            홈
+                        </StyledLink>
+                        <StyledLink activeClassName='selected' to='/lectures'>
+                            <ReviewIcon/>
+                            강의평
+                        </StyledLink>
+                        <StyledLink activeClassName='selected' to='/resources'>
+                            <LectureMaterialIcon/>
+                            강의자료
+                        </StyledLink>
+                        <StyledLink activeClassName='selected' to='/timetable'>
+                            <TimetableIcon/>
+                            시간표
+                        </StyledLink>
+                        <StyledLink activeClassName='selected' to='/my'>
+                            <MyPageIcon/>
+                            마이페이지
+                        </StyledLink>
                     </MobileMenuWrapper>
                 </HangangMenuWrapper>
                 <LogosMenuContainer>
                     <HangangFooterLogo/>
                     <FooterMenuWrapper>
-                        {footerMenuList.map((menu, index) => <FooterMenu key={index} href={linkList[footerMenuList.indexOf(menu)]} target='_blank'>{menu}</FooterMenu>)}
+                        {FOOTER_MENU_LIST.map((menu, index) => <FooterMenu key={index} href={FOOTER_LINK_LIST[FOOTER_MENU_LIST.indexOf(menu)]} target='_blank'>{menu}</FooterMenu>)}
                     </FooterMenuWrapper>
                     <Logos>
-                        <Logo href={linkList[4]} target='_blank'>
+                        <Logo href='https://www.facebook.com/bcsdlab/' target='_blank'>
                             <FacebookLogo/>
                         </Logo>
-                        <Logo href={'/'} target='_blank'>
+                        <Logo href='/' target='_blank'>
                             <HomeLogo/>
                         </Logo>
                     </Logos>
