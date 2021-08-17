@@ -3,8 +3,7 @@ import {ReactComponent as HangangFooterLogo} from '../../assets/images/footer/Ha
 import {ReactComponent as FacebookLogo} from '../../assets/images/footer/FacebookLogo.svg'
 import {ReactComponent as HomeLogo} from '../../assets/images/footer/HomeLogo.svg'
 import { StyledLink,Logo,MobileMenuWrapper,MenuWrapper, CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooter.style'
-import {linkList} from './static'
-import { FOOTER_MENU_LIST} from '../../static/indexPage/menuList'
+import { FOOTER_MENU_LIST, FOOTER_LINK_LIST} from '../../static/footer/menuList'
 import {ReactComponent as HomeIcon} from '../../assets/images/footer/footer_reponsive/Home_gray.svg'
 import {ReactComponent as ReviewIcon} from '../../assets/images/footer/footer_reponsive/Review_gray.svg'
 import {ReactComponent as LectureMaterialIcon} from '../../assets/images/footer/footer_reponsive/LectureMaterial_gray.svg'
@@ -64,7 +63,7 @@ function MainPageFooter(){
                 <LogosMenuContainer>
                     <HangangFooterLogo/>
                     <FooterMenuWrapper>
-                        {FOOTER_MENU_LIST.map((menu, index) => <FooterMenu key={index} href={linkList[FOOTER_MENU_LIST.indexOf(menu)]} target='_blank'>{menu}</FooterMenu>)}
+                        {FOOTER_MENU_LIST.map((menu, index) => <FooterMenu key={index} href={FOOTER_LINK_LIST[FOOTER_MENU_LIST.indexOf(menu)]} target='_blank'>{menu}</FooterMenu>)}
                     </FooterMenuWrapper>
                     <Logos>
                         <Logo href='https://www.facebook.com/bcsdlab/' target='_blank'>
