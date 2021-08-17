@@ -1,33 +1,37 @@
 import React, { useState } from 'react' 
 import {StyledLink,Logo,DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
 import {ReactComponent as HangangLogo} from '../../assets/images/banner/HangangLogo.svg'
-import { MENU_LIST, MENU_LINK_LIST} from '../../static/indexPage/menuList'
-import {useHistory, useLocation} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 function Banner(){
-    const location = useLocation()
-    const [nowPage,setPage] = useState(0)
-    const ClickMainMenu = (e) =>{
-        setPage(MENU_LIST.indexOf(e.target.textContent))
-    }
-    const ClickLogo = () =>{
-        setPage(0)
-    }
     return (
         <PageHeader>
             <MenuWrapper>
                 <MainMenuWrapper>
-                    <StyledLink excat to='/'>
-                        <Logo onClick={()=>ClickLogo()}>
+                    <Link  to='/'>
+                        <Logo>
                             <HangangLogo/>
                         </Logo>
+                    </Link>
+                    <StyledLink activeClassName='selected' exact to='/'>
+                        <MainMenu>
+                            홈
+                        </MainMenu>
                     </StyledLink>
-                    {MENU_LIST.map((menu,id) => 
-                    <StyledLink to={MENU_LINK_LIST[MENU_LIST.indexOf(menu)]} key={id}>
-                        <MainMenu onClick={(e) => ClickMainMenu(e)} isClicked={nowPage===MENU_LIST.indexOf(menu)}>
-                                {menu}
-                            </MainMenu>
-                    </StyledLink>)}
-
+                    <StyledLink activeClassName='selected' to='/lectures'>
+                        <MainMenu>
+                            강의평
+                        </MainMenu>
+                    </StyledLink>
+                    <StyledLink activeClassName='selected' to='/resources'>
+                        <MainMenu>
+                            강의자료
+                        </MainMenu>
+                    </StyledLink>
+                    <StyledLink activeClassName='selected' to='/timetable'>
+                        <MainMenu>
+                            시간표
+                        </MainMenu>
+                    </StyledLink>
                 </MainMenuWrapper>
                 <LoginMenuWrapper>
                     <LoginMenu>로그인</LoginMenu>

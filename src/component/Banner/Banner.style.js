@@ -2,6 +2,10 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 export const StyledLink = styled(NavLink)`
     text-decoration: none;
+    &.selected{
+        margin-bottom : -2px;
+        border-bottom : #238bfe 2px solid;
+    }
 `
 export const PageHeader = styled.header`
     width : 100%;
@@ -50,8 +54,6 @@ export const MainMenu = styled.div`
     color : #238bfe;
     font-size : 17px;
     cursor : pointer;
-    margin-bottom : ${props=>props.isClicked?'-2px':''};
-    border-bottom : ${props=>props.isClicked?'#238bfe 2px solid;':''};
     @media screen and (max-width : 574px){
         display : None;
     }
