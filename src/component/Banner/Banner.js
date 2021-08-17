@@ -1,4 +1,4 @@
-import React, { useState } from 'react' 
+import React from 'react' 
 import {StyledLink,Logo,DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
 import {ReactComponent as HangangLogo} from '../../assets/images/banner/HangangLogo.svg'
 import {Link} from 'react-router-dom'
