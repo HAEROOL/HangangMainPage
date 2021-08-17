@@ -9,11 +9,8 @@ import ClickedTimetable from '../../assets/images/footer/footer_reponsive/Timeta
 import MyPage from '../../assets/images/footer/footer_reponsive/MyPage_gray.svg'
 import ClickedMyPage from '../../assets/images/footer/footer_reponsive/MyPage.svg'
 
-export const hangangMenuList = ['강의평','강의자료','시간표']
-export const hangangMobileMenuList = ['홈','강의평','강의자료','시간표','마이페이지']
 export const UnclickedImageList = [Home,Review,LectureMaterial,Timetable,MyPage]
 export const ClickedImageList = [ClickedHome,ClickedReview,ClickedLectureMaterial,ClickedTimetable,ClickedMyPage]
-export const footerMenuList = ['BCSD Lab 바로가기','코리아텍 바로가기','아우누리 바로가기','개인정보 처리방침']
 export const linkList = [
     'https://bcsdlab.com/',
     'https://www.koreatech.ac.kr/kor/Main.do',

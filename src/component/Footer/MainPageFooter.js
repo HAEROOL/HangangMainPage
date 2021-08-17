@@ -3,7 +3,8 @@ import {ReactComponent as HangangFooterLogo} from '../../assets/images/footer/Ha
 import {ReactComponent as FacebookLogo} from '../../assets/images/footer/FacebookLogo.svg'
 import {ReactComponent as HomeLogo} from '../../assets/images/footer/HomeLogo.svg'
 import { Logo,MenuIcon,MobileMenuWrapper,MenuWrapper, CopyRight, FooterContentsWrapper, FooterMenu, FooterMenuWrapper, HangangMenu, HangangMenuWrapper, Logos, LogosMenuContainer, MainPageFooterWrapper } from './MainPageFooter.style'
-import {hangangMenuList,hangangMobileMenuList, UnclickedImageList,ClickedImageList,footerMenuList, linkList} from './static'
+import {UnclickedImageList,ClickedImageList, linkList} from './static'
+import { MENU_LIST,MOBILE_MENU_LIST, FOOTER_MENU_LIST} from '../../static/indexPage/menuList'
 import {Link} from 'react-router-dom'
 
 function MainPageFooter(){
@@ -11,7 +12,7 @@ function MainPageFooter(){
     const ClickMenu = (e) =>{
         e.stopPropagation();
         if (nowMenu !== e.target.id){
-            setMenu(hangangMobileMenuList.indexOf(e.target.id))
+            setMenu(MOBILE_MENU_LIST.indexOf(e.target.id))
         }
     }
     return (
@@ -19,15 +20,15 @@ function MainPageFooter(){
             <FooterContentsWrapper>
                 <HangangMenuWrapper>
                     <MenuWrapper>
-                        {hangangMenuList.map((menu, id) =>
+                        {MENU_LIST.map((menu, id) =>
                         <Link to={'/dummy'} key={id} style={{textDecoration:'none'}}>
                             <HangangMenu >{menu}</HangangMenu>
                         </Link>)}
                     </MenuWrapper>
                     <MobileMenuWrapper>
-                        {hangangMobileMenuList.map((menu, id) =>
-                            <HangangMenu  key={id} id={menu} isClicked={nowMenu===hangangMobileMenuList.indexOf(menu)} onClick={(e)=>ClickMenu(e)}>
-                                <MenuIcon id={menu} url={nowMenu===hangangMobileMenuList.indexOf(menu)?ClickedImageList[hangangMobileMenuList.indexOf(menu)]:UnclickedImageList[hangangMobileMenuList.indexOf(menu)]}/>
+                        {MOBILE_MENU_LIST.map((menu, id) =>
+                            <HangangMenu  key={id} id={menu} isClicked={nowMenu===MOBILE_MENU_LIST.indexOf(menu)} onClick={(e)=>ClickMenu(e)}>
+                                <MenuIcon id={menu} url={nowMenu===MOBILE_MENU_LIST.indexOf(menu)?ClickedImageList[MOBILE_MENU_LIST.indexOf(menu)]:UnclickedImageList[MOBILE_MENU_LIST.indexOf(menu)]}/>
                                 {menu}
                             </HangangMenu>
                             )}
@@ -36,7 +37,7 @@ function MainPageFooter(){
                 <LogosMenuContainer>
                     <HangangFooterLogo/>
                     <FooterMenuWrapper>
-                        {footerMenuList.map((menu, index) => <FooterMenu key={index} href={linkList[footerMenuList.indexOf(menu)]} target='_blank'>{menu}</FooterMenu>)}
+                        {FOOTER_MENU_LIST.map((menu, index) => <FooterMenu key={index} href={linkList[FOOTER_MENU_LIST.indexOf(menu)]} target='_blank'>{menu}</FooterMenu>)}
                     </FooterMenuWrapper>
                     <Logos>
                         <Logo href={linkList[4]} target='_blank'>

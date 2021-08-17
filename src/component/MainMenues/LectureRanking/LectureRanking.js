@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { LectureAndOrder,LectureOrder,AverageScore, Professor, LectureNameAndProfessor,Lecture,LectureWrapper,ComponentName, DepartmentName, DepartmentSelector, LectureRankingHeader, LectureRankingWrapper, RankingWrapper, LectureContainer } from './LectureRanking.style'
 import {useGetLecturesQuery} from '../../../api/hangangLecture'
-import {DepartmentList} from './static'
+import {DEPARTMENT_LIST} from '../../../static/indexPage/departmentList'
 function LectureRanking(){
     const [selectedDepartment,setDepartment] = useState({title:'교양',id:10})
     const {data, error, isLoading} = useGetLecturesQuery(selectedDepartment.id)
@@ -16,7 +16,7 @@ function LectureRanking(){
             <RankingWrapper>
                 <LectureRankingHeader>
                     <DepartmentSelector>
-                        {DepartmentList.map((department)=><DepartmentName key={department.id} id={department.id} onClick={e => ClickDepartment(e)} isClicked={selectedDepartment.title===department.title}>{department.title}</DepartmentName>)}
+                        {DEPARTMENT_LIST.map((department)=><DepartmentName key={department.id} id={department.id} onClick={e => ClickDepartment(e)} isClicked={selectedDepartment.title===department.title}>{department.title}</DepartmentName>)}
                     </DepartmentSelector>
                 </LectureRankingHeader>
                 <LectureWrapper>

@@ -1,5 +1,8 @@
 import styled from 'styled-components'
-
+import { NavLink } from 'react-router-dom'
+export const StyledLink = styled(NavLink)`
+    text-decoration: none;
+`
 export const PageHeader = styled.header`
     width : 100%;
     min-width : 1280px;
@@ -73,4 +76,7 @@ export const DevideLine = styled.div`
     @media screen and (max-width : 574px){
         display : None;
     }
+`
+export const Logo = styled.div`
+    cursor : pointer;
 `

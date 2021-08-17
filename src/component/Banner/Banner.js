@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
-import {DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
+import React, { useState } from 'react' 
+import {StyledLink,Logo,DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
 import {ReactComponent as HangangLogo} from '../../assets/images/banner/HangangLogo.svg'
-import {menuList,menuLinkList} from './static'
-import { Link } from 'react-router-dom'
+import { MENU_LIST, MENU_LINK_LIST} from '../../static/indexPage/menuList'
+import {useHistory, useLocation} from 'react-router-dom'
 function Banner(){
+    const location = useLocation()
     const [nowPage,setPage] = useState(0)
     const ClickMainMenu = (e) =>{
-        setPage(menuList.indexOf(e.target.textContent))
+        setPage(MENU_LIST.indexOf(e.target.textContent))
     }
     const ClickLogo = () =>{
         setPage(0)
@@ -15,15 +16,18 @@ function Banner(){
         <PageHeader>
             <MenuWrapper>
                 <MainMenuWrapper>
-                    <Link to={'/'}>
-                        <HangangLogo style={{cursor:'pointer'}} onClick={()=>ClickLogo()}/>
-                    </Link>
-                    {menuList.map((menu,id) => 
-                    <Link style={{textDecoration:'none'}}to={menuLinkList[menuList.indexOf(menu)]} key={id}>
-                        <MainMenu onClick={(e) => ClickMainMenu(e)} isClicked={nowPage===menuList.indexOf(menu)}>
+                    <StyledLink excat to='/'>
+                        <Logo onClick={()=>ClickLogo()}>
+                            <HangangLogo/>
+                        </Logo>
+                    </StyledLink>
+                    {MENU_LIST.map((menu,id) => 
+                    <StyledLink to={MENU_LINK_LIST[MENU_LIST.indexOf(menu)]} key={id}>
+                        <MainMenu onClick={(e) => ClickMainMenu(e)} isClicked={nowPage===MENU_LIST.indexOf(menu)}>
                                 {menu}
                             </MainMenu>
-                    </Link>)}
+                    </StyledLink>)}
+
                 </MainMenuWrapper>
                 <LoginMenuWrapper>
                     <LoginMenu>로그인</LoginMenu>
@@ -32,7 +36,6 @@ function Banner(){
                 </LoginMenuWrapper>
             </MenuWrapper>
         </PageHeader>
-
     )
 }
 
