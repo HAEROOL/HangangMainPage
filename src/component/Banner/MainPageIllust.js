@@ -18,7 +18,7 @@ const TextWrapper = styled.div`
     font-family : 'NanumSquareRound';
     flex-direction : column;
     font-size : 36px;
-    align-items : end;
+    align-items : start;
     margin-top : 212px;
 `
 const FirstLineOfPhrase = styled.span`
