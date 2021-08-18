@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { ComponentName,CurrentLectureWrapper,LectureList, Lecture, LectureNameAndProfessor, Professor, AverageScore, } from './CurrentLecture.style'
+import { LectureInformaion,ComponentName,CurrentLectureWrapper,LectureList, Lecture, LectureNameAndProfessor, Professor, AverageScore, } from './CurrentLecture.style'
 function CurrentLecture(){
     const [currentLectureList,setList] = useState(JSON.parse(localStorage.getItem('recentlyViewedLectures'))?JSON.parse(localStorage.getItem('recentlyViewedLectures')):[])
     return (
@@ -8,10 +8,10 @@ function CurrentLecture(){
             <LectureList>
                 {currentLectureList.map((lecture, id) => 
                         <Lecture key={id}>
-                            <LectureNameAndProfessor>
+                            <LectureInformaion>
                                 {lecture.name}
                                 <Professor>{lecture.professor}</Professor>
-                            </LectureNameAndProfessor>
+                            </LectureInformaion>
                             <AverageScore>{parseFloat(lecture.total_rating).toFixed(1)}</AverageScore>
                         </Lecture>
                     )}
