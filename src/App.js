@@ -5,6 +5,7 @@ import MainPageFooter from './component/Footer/MainPageFooter'
 import './assets/fonts/font.css';
 import { Route, Switch} from 'react-router-dom';
 import TestComp from './test';
+import { MobileWidth } from './static/shared/commonStyle';
 const TotalPage = styled.div`
   display : flex;
   flex-direction : column;
@@ -12,7 +13,7 @@ const TotalPage = styled.div`
   font-family : NotoSansKRLight;
   margin : 0 auto;
   min-width : 1280px;
-  @media screen and (max-width : 574px){
+  @media screen and (max-width : ${MobileWidth}){
     min-width : 300px;
   }
 `
