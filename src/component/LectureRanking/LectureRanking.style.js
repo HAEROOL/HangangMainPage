@@ -41,14 +41,16 @@ export const DepartmentSelector = styled.ul`
 `
 export const LectureRankingHeader = styled.div`
     @media screen and (max-width : 574px){
-        overflow : auto;
+        overflow-x : auto;
     }
 `
 export const DepartmentName = styled.div`
     height : 40px;
+    width : 40px;
     display : flex;
     margin-bottom : ${props => props.isClicked?'-2px':'0'};
     align-items : center;
+    justify-content : center;
     cursor : pointer;
     color : ${props => props.isClicked?'#238bfe':'#999999'};
     border-bottom : ${props => props.isClicked?'#ffab2e 2px solid':''}
@@ -80,7 +82,7 @@ export const Lecture = styled.div`
     justify-content : space-between;
     align-items : center;
 `
-export const LectureNameAndProfessor = styled.div`
+export const LectureInformaion = styled.div`
     display : flex;
     flex-direction : column;
 `
@@ -97,6 +99,6 @@ export const LectureOrder = styled.div`
     color : #238bfe;
     margin-right:24px;
 `
-export const LectureAndOrder =styled.div`
+export const LectureContent =styled.div`
     display : flex;
 `
