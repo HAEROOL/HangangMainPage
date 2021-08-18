@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import {NoTimeTable,GoTimeTableButton,ComponentName,TimeTableWrapper,LectureList,Lecture, Professor, EvaluationButton, LectureNameAndProfessor} from './TimeTable.style'
-import {Link} from 'react-router-dom'
+import {StyledLink,NoTimeTable,GoTimeTableButton,ComponentName,TimeTableWrapper,LectureList,Lecture, Professor, EvaluationButton, LectureNameAndProfessor} from './TimeTable.style'
+
 function TimeTable(){
     const [lectureList] = useState(null)
     return (
@@ -20,9 +20,9 @@ function TimeTable(){
                     ):(
                         <NoTimeTable>
                             아직 작성한 시간표가 없습니다.
-                            <Link to='/dummy'  style={{textDecoration:'none'}}>
+                            <StyledLink to='/timetable'>
                                  <GoTimeTableButton>작성하러가기</GoTimeTableButton>
-                            </Link>
+                            </StyledLink>
                         </NoTimeTable>
                     )}
                 </LectureList>
