@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LectureAndOrder,LectureOrder,AverageScore, Professor, LectureNameAndProfessor,Lecture,LectureWrapper,ComponentName, DepartmentName, DepartmentSelector, LectureRankingHeader, LectureRankingWrapper, RankingWrapper, LectureContainer } from './LectureRanking.style'
+import { LectureInformaion,LectureContent,LectureOrder,AverageScore, Professor, Lecture,LectureWrapper,ComponentName, DepartmentName, DepartmentSelector, LectureRankingHeader, LectureRankingWrapper, RankingWrapper, LectureContainer } from './LectureRanking.style'
 import {useGetLecturesQuery} from '../../api/hangangLecture'
 import {DEPARTMENT_LIST} from '../../static/indexPage/departmentList'
 function LectureRanking(){
@@ -29,16 +29,15 @@ function LectureRanking(){
                     {data.result.map(lecture => (
                         <LectureContainer key={lecture.id}>
                             <Lecture>
-                                <LectureAndOrder>
+                                <LectureContent>
                                     <LectureOrder>
                                         0{data.result.indexOf(lecture)+1}
                                     </LectureOrder>
-                                    <LectureNameAndProfessor>
+                                    <LectureInformaion>
                                         {lecture.name}
                                         <Professor>{lecture.professor}</Professor>
-                                    </LectureNameAndProfessor>
-                                </LectureAndOrder>
-                                
+                                    </LectureInformaion>
+                                </LectureContent>
                                 <AverageScore>{parseFloat(lecture.total_rating).toFixed(1)}</AverageScore>
                             </Lecture>
                         </LectureContainer>

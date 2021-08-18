@@ -82,7 +82,7 @@ export const Lecture = styled.div`
     justify-content : space-between;
     align-items : center;
 `
-export const LectureNameAndProfessor = styled.div`
+export const LectureInformaion = styled.div`
     display : flex;
     flex-direction : column;
 `
@@ -99,6 +99,6 @@ export const LectureOrder = styled.div`
     color : #238bfe;
     margin-right:24px;
 `
-export const LectureAndOrder =styled.div`
+export const LectureContent =styled.div`
     display : flex;
 `
