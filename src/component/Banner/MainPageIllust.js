@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import '../../assets/fonts/font.css'
 import {ReactComponent as HangangIllust} from '../../assets/images/mainmenues/HangangMainpageIllust.svg'
+import { FontColor, MobileWidth } from '../../static/shared/commonStyle'
 const IllustWrapper = styled.div`
     display : flex;
     height : 330px;
     width : 1135px;
     justify-content : space-between;
     margin : 0 auto;
-    @media screen and (max-width:574px){
+    @media screen and (max-width : ${MobileWidth}){
         display : None;
     }
 
@@ -31,7 +32,7 @@ const SecondLineOfPhrase = styled.div`
     align-items : start;
     display : block;
     margin-top : 16px;
-    color : #222222;
+    color : ${FontColor};
     font-weight : 800;
 `
 function MainPageIllust(){
