@@ -7,7 +7,7 @@ export const MainPageMenuWrapper = styled.div`
     }
 
 `
-export const FirstMaterial = styled.div`
+export const LeftSection = styled.div`
     @media screen and (max-width : 574px){
         order : 1;
         width : 90%;
@@ -15,32 +15,35 @@ export const FirstMaterial = styled.div`
     }
 
 `
-export const SecondMaterial = styled.div`
+export const TopSection = styled.div`
     @media screen and (max-width : 574px){
         order : 2;
         width : 100%;
     }
 `
-export const ThirdMaterial = styled.div`
+export const RightBottomLeftSection = styled.div`
+    width : 370px;
     @media screen and (max-width : 574px){
-        order : 3;
         width : 90%;
         margin : 0 auto;
+        order : 3;
     }
 `
-export const FourthMaterial = styled.div`
+export const RightTopSection = styled.div`
+    width : 660px;
     @media screen and (max-width : 574px){
-        order : 4;
         width : 90%;
         margin : 0 auto;
+        order : 4;
     }
 
 `
-export const FifthMaterial = styled.div`
+export const RightBottomRightSection = styled.div`
+    width : 275px;
     @media screen and (max-width : 574px){
-        order : 5;
         width : 90%;
         margin : 0 auto;
+        order : 5;
     }
 
 `
@@ -56,17 +59,19 @@ export const ThridFifthWrapper = styled.div`
     }
 `
 
-export const FourthThirdFifthWrapper = styled.div`
+export const RightSection = styled.div`
     display : flex;
-    flex-direction : column;
     gap : 16px;
+    width : 670px;
+    flex-wrap : wrap;
     @media screen and (max-width : 574px){
         width : 100%;
         order : 9999;
     }
 `
-export const FirstFourthThirdFifthWrapper = styled.div`
+export const IndexPageMenu = styled.div`
     display : flex;
+    width : 1156px;
     gap : 16px;
     flex-wrap : wrap;
     @media screen and (max-width : 574px){

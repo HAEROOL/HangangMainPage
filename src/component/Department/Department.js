@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledLink,DepartmentBrowserWrapper,DepartmentList, Department, DepartmentName, ComponentName, DepartmentListScroll } from './Department.style'
-import { DEPARTMENT_LIST } from '../../../static/indexPage/departmentList'
+import { DEPARTMENT_LIST } from '../../static/indexPage/departmentList'
 
 function DepartmentBrowser(){
     return (

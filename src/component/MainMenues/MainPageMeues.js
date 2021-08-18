@@ -1,31 +1,33 @@
 import React from 'react'
-import CurrentLecture from './CurrentLecture/CurrentLecture'
-import TimeTable from './TimeTable/TimeTable'
-import RecommendationLectureMaterial from './RecommendationLecutreMaterial/RecommendationLectureMaterial'
-import LectureRanking from './LectureRanking/LectureRanking'
+import CurrentLecture from '../../component/CurrentLecture/CurrentLecture'
+import TimeTable from '../../component/TimeTable/TimeTable'
+import RecommendationLectureMaterial from '../../component/RecommendationLecutreMaterial/RecommendationLectureMaterial'
+import LectureRanking from '../../component/LectureRanking/LectureRanking'
 import { MainMenuBrowserWrapper,FifthMaterial, FirstFourthThirdFifthWrapper, FirstMaterial, FourthMaterial, FourthThirdFifthWrapper, MainPageMenuWrapper, SecondMaterial, ThirdMaterial, ThridFifthWrapper } from './MainPageMenues.style'
-import DepartmentBrowser from './Department/Department'
+import DepartmentBrowser from '../../component/Department/Department'
 function MainPageMenu(){
     return(
         <MainPageMenuWrapper>
             <MainMenuBrowserWrapper>
                 <FirstFourthThirdFifthWrapper>
                     <SecondMaterial>
-                        <DepartmentBrowser/>
+                        {/* <DepartmentBrowser/> */}
+                        2
                     </SecondMaterial>
                     <FirstMaterial>
-                        <LectureRanking/>
+                        {/* <LectureRanking/> */}
+                        1
                     </FirstMaterial>
                     <FourthThirdFifthWrapper>
                         <FourthMaterial>
-                            <RecommendationLectureMaterial/>
+                            <RecommendationLectureMaterial/>4
                         </FourthMaterial>
                         <ThridFifthWrapper>
                             <ThirdMaterial>
-                                <TimeTable/>
+                                <TimeTable/>3
                             </ThirdMaterial>
                             <FifthMaterial>
-                                <CurrentLecture/>
+                                <CurrentLecture/>5
                             </FifthMaterial>
                         </ThridFifthWrapper>
                     </FourthThirdFifthWrapper>
