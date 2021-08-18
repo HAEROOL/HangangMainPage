@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import '../../../assets/fonts/font.css'
+import '../../assets/fonts/font.css'
 export const LectureRankingWrapper = styled.div`
     width : 470px;
     height : 450px;
