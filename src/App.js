@@ -1,6 +1,6 @@
 import Banner from './component/Banner/Banner'
 import styled from 'styled-components';
-import MainPage from './pages/MainPage';
+import IndexPage from './pages/IndexPage/IndexPage';
 import MainPageFooter from './component/Footer/MainPageFooter'
 import './assets/fonts/font.css';
 import { Route, Switch} from 'react-router-dom';
@@ -21,7 +21,7 @@ function App() {
       <TotalPage>
         <Banner/>
         <Switch>
-          <Route exact path='/' component={MainPage}/>
+          <Route exact path='/' component={IndexPage}/>
           <Route exact path='/lectures' component={TestComp}/>
           <Route exact path='/resources' component={TestComp}/>
           <Route exact path='/timetable' component={TestComp}/>
