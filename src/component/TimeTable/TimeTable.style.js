@@ -1,5 +1,8 @@
 import styled from 'styled-components'
-
+import {NavLink} from 'react-router-dom'
+export const StyledLink = styled(NavLink)`
+    text-decoration : none;
+`
 export const TimeTableWrapper = styled.div`
     width : 370px;
     height : 318px;
