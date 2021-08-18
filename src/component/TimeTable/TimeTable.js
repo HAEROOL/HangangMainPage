@@ -3,7 +3,6 @@ import {NoTimeTable,GoTimeTableButton,ComponentName,TimeTableWrapper,LectureList
 import {Link} from 'react-router-dom'
 function TimeTable(){
     const [lectureList] = useState(null)
-    
     return (
         <TimeTableWrapper>
             <ComponentName>내 시간표</ComponentName>
