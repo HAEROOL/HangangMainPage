@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
-import { LectureInformaion,ComponentName,CurrentLectureWrapper,LectureList, Lecture, LectureNameAndProfessor, Professor, AverageScore, } from './CurrentLecture.style'
+import { LectureInformaion,ComponentName,CurrentLectureWrapper,LectureList, Lecture, Professor, AverageScore, } from './CurrentLecture.style'
 function CurrentLecture(){
-    const [currentLectureList,setList] = useState(JSON.parse(localStorage.getItem('recentlyViewedLectures'))?JSON.parse(localStorage.getItem('recentlyViewedLectures')):[])
+    const [currentLectureList] = useState(JSON.parse(localStorage.getItem('recentlyViewedLectures'))?JSON.parse(localStorage.getItem('recentlyViewedLectures')):[])
     return (
         <CurrentLectureWrapper>
             <ComponentName>최근 본 강의</ComponentName>
