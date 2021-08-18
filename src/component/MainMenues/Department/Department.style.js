@@ -1,26 +1,30 @@
 import styled from "styled-components";
 import '../../../assets/fonts/font.css'
+import { NavLink } from 'react-router-dom'
+export const StyledLink = styled(NavLink)`
+    text-decoration : none;
+`
 export const DepartmentBrowserWrapper = styled.div`
     width : 1135px;
     @media screen and (max-width : 574px){
         width : 100%;
-        height : 140px;
+        height : 150px;
     }
 `
-export const Scroll = styled.div`
+export const DepartmentListScroll = styled.div`
     @media screen and (max-width : 574px){
         overflow-x : scroll;
-        height : 120px;
     }
 `
-export const DepartmentListWrapper = styled.ul`
+export const DepartmentList = styled.ul`
     display : flex;
     justify-content : space-between;
     padding : 0;
     margin : 0;
     @media screen and (max-width : 574px){
         width : 1100px;
-        padding : 0 10px;
+        padding : 0 20px;
+        margin-bottom : 10px;
     }
 `
 export const Department = styled.li`
@@ -36,7 +40,6 @@ export const Department = styled.li`
     background-size: 100px 87px;
     @media screen and (max-width : 574px){
         height : 100px;
-        background-size: 100px 100px;
         font-size : 12px;
         background-size: 100px 100px;
     }
