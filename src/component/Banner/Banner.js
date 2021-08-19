@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Wrapp,FocusLine,StyledLink,Logo,DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
+import {BannerContent,FocusLine,StyledLink,Logo,DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
 import {ReactComponent as HangangLogo} from '../../assets/images/banner/HangangLogo.svg'
 import {Link, useLocation} from 'react-router-dom'
 function Banner(){
@@ -21,7 +21,7 @@ function Banner(){
     return (
         <PageHeader>
             <MenuWrapper>
-                <Wrapp>
+                <BannerContent>
                 <MainMenuWrapper>
                     <Link  to='/'>
                         <Logo>
@@ -50,7 +50,7 @@ function Banner(){
                     </StyledLink>
                 </MainMenuWrapper>
                 <FocusLine location={locationNumber(location.pathname)}/>
-                </Wrapp>
+                </BannerContent>
                 <LoginMenuWrapper>
                     <StyledLink to='/login'>
                         <LoginMenu>로그인</LoginMenu>

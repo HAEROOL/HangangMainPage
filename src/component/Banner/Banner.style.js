@@ -16,9 +16,10 @@ export const FocusLine = styled.div`
         display : none;
     }
 `
-export const Wrapp = styled.div`
+export const BannerContent = styled.div`
     display : flex;
     flex-direction : column;
+    width : 100%;
 `
 export const PageHeader = styled.header`
     width : 100%;
@@ -51,6 +52,9 @@ export const MainMenuWrapper = styled.div`
     justify-content : space-between;
     align-items : center;
     postion : relative;
+    @media screen and (max-width : ${MobileWidth}){
+        width : 100%;
+    }
 `
 export const LoginMenuWrapper = styled.div`
     width : 170px;
