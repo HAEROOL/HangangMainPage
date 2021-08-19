@@ -1,11 +1,27 @@
 import React from 'react' 
-import {StyledLink,Logo,DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
+import {Wrapp,FocusLine,StyledLink,Logo,DevideLine,PageHeader,MenuWrapper,MainMenu,MainMenuWrapper,LoginMenuWrapper,LoginMenu} from'./Banner.style'
 import {ReactComponent as HangangLogo} from '../../assets/images/banner/HangangLogo.svg'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 function Banner(){
+    const location = useLocation()
+    const locationNumber = (location) =>{
+        switch(location){
+            case  '/':
+                return 0
+            case '/lectures':
+                return 1
+            case '/resources':
+                return 2
+            case '/timetable':
+                return 3
+            default:
+                return 0
+        }
+    }
     return (
         <PageHeader>
             <MenuWrapper>
+                <Wrapp>
                 <MainMenuWrapper>
                     <Link  to='/'>
                         <Logo>
@@ -33,14 +49,17 @@ function Banner(){
                         </MainMenu>
                     </StyledLink>
                 </MainMenuWrapper>
+                <FocusLine location={locationNumber(location.pathname)}/>
+                </Wrapp>
                 <LoginMenuWrapper>
                     <StyledLink to='/login'>
                         <LoginMenu>로그인</LoginMenu>
                     </StyledLink>
+                    <DevideLine/>
                     <StyledLink to='/signup'>
                         <LoginMenu>회원가입</LoginMenu>
                     </StyledLink>
-                    <DevideLine/>
+                    
                     
                 </LoginMenuWrapper>
             </MenuWrapper>
