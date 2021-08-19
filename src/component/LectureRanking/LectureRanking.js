@@ -5,7 +5,7 @@ import {DEPARTMENT_LIST} from '../../static/indexPage/departmentList'
 function LectureRanking(){
     const [selectedDepartment,setDepartment] = useState({title:'교양',id:10})
     const {data, error, isLoading} = useGetLecturesQuery(selectedDepartment.id)
-    const ClickDepartment = (department) =>{
+    const clickDepartment = (department) =>{
         if(selectedDepartment.id !== department.id){
             setDepartment({title:department.title,id:department.id})
         }
@@ -16,7 +16,7 @@ function LectureRanking(){
             <RankingWrapper>
                 <LectureRankingHeader>
                     <DepartmentSelector>
-                        {DEPARTMENT_LIST.map((department)=><DepartmentName key={department.id} onClick={() => ClickDepartment(department)} isClicked={selectedDepartment.title===department.title}>{department.title}</DepartmentName>)}
+                        {DEPARTMENT_LIST.map((department)=><DepartmentName key={department.id} onClick={() => clickDepartment(department)} isClicked={selectedDepartment.title===department.title}>{department.title}</DepartmentName>)}
                     </DepartmentSelector>
                 </LectureRankingHeader>
                 <LectureWrapper>

@@ -3,10 +3,22 @@ import { NavLink } from 'react-router-dom'
 import {SignatureColor, BaseColor, MobileWidth} from '../../static/shared/commonStyle'
 export const StyledLink = styled(NavLink)`
     text-decoration: none;
-    &.selected{
-        margin-bottom : -2px;
-        border-bottom : ${SignatureColor} 2px solid;
+`
+export const FocusLine = styled.div`
+    postion : absolute; 
+    transition: transform 0.3s ease 0s;
+    transform: translateX(${porps=>porps.location * 120 + 98}px);
+    width : 107px;
+    height : 2px;
+    bottom : -1px;
+    background-color : ${SignatureColor};
+    @media screen and (max-width : ${MobileWidth}){
+        display : none;
     }
+`
+export const Wrapp = styled.div`
+    display : flex;
+    flex-direction : column;
 `
 export const PageHeader = styled.header`
     width : 100%;
@@ -38,6 +50,7 @@ export const MainMenuWrapper = styled.div`
     display : flex;
     justify-content : space-between;
     align-items : center;
+    postion : relative;
 `
 export const LoginMenuWrapper = styled.div`
     width : 170px;
@@ -60,7 +73,7 @@ export const MainMenu = styled.div`
     }
 `
 
-export const LoginMenu = styled.a`
+export const LoginMenu = styled.div`
     display : flex;
     justify-content : center;
     align-items : center;
