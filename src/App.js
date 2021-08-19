@@ -23,10 +23,12 @@ function App() {
         <Banner/>
         <Switch>
           <Route exact path='/' component={IndexPage}/>
-          <Route exact path='/lectures' component={TestComp}/>
-          <Route exact path='/resources' component={TestComp}/>
-          <Route exact path='/timetable' component={TestComp}/>
-          <Route exact path='/my' component={TestComp}/>
+          <Route path='/lectures' component={TestComp}/>
+          <Route path='/resources' component={TestComp}/>
+          <Route path='/timetable' component={TestComp}/>
+          <Route path='/my' component={TestComp}/>
+          <Route path='/login' component={TestComp}/>
+          <Route path='/signup' component={TestComp}/>
         </Switch>
         <MainPageFooter/>
       </TotalPage>
