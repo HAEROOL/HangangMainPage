@@ -34,9 +34,14 @@ function Banner(){
                     </StyledLink>
                 </MainMenuWrapper>
                 <LoginMenuWrapper>
-                    <LoginMenu>로그인</LoginMenu>
+                    <StyledLink to='/login'>
+                        <LoginMenu>로그인</LoginMenu>
+                    </StyledLink>
+                    <StyledLink to='/signup'>
+                        <LoginMenu>회원가입</LoginMenu>
+                    </StyledLink>
                     <DevideLine/>
-                    <LoginMenu>회원가입</LoginMenu>
+                    
                 </LoginMenuWrapper>
             </MenuWrapper>
         </PageHeader>
