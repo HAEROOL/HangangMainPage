@@ -1,46 +1,49 @@
 import styled from 'styled-components'
-
+import { MobileWidth } from '../../static/shared/commonStyle'
 export const MainPageMenuWrapper = styled.div`
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         display : flex;
         margin : 0 auto;
     }
 
 `
-export const FirstMaterial = styled.div`
-    @media screen and (max-width : 574px){
+export const LeftSection = styled.div`
+    @media screen and (max-width : ${MobileWidth}){
         order : 1;
         width : 90%;
         margin : 0 auto;
     }
 
 `
-export const SecondMaterial = styled.div`
-    @media screen and (max-width : 574px){
+export const TopSection = styled.div`
+    @media screen and (max-width : ${MobileWidth}){
         order : 2;
         width : 100%;
     }
 `
-export const ThirdMaterial = styled.div`
-    @media screen and (max-width : 574px){
-        order : 3;
+export const RightBottomLeftSection = styled.div`
+    width : 370px;
+    @media screen and (max-width : ${MobileWidth}){
         width : 90%;
         margin : 0 auto;
+        order : 3;
     }
 `
-export const FourthMaterial = styled.div`
-    @media screen and (max-width : 574px){
-        order : 4;
+export const RightTopSection = styled.div`
+    width : 660px;
+    @media screen and (max-width : ${MobileWidth}){
         width : 90%;
         margin : 0 auto;
+        order : 4;
     }
 
 `
-export const FifthMaterial = styled.div`
-    @media screen and (max-width : 574px){
-        order : 5;
+export const RightBottomRightSection = styled.div`
+    width : 275px;
+    @media screen and (max-width : ${MobileWidth}){
         width : 90%;
         margin : 0 auto;
+        order : 5;
     }
 
 `
@@ -49,27 +52,29 @@ export const ThridFifthWrapper = styled.div`
     display : flex;
     flex-wrap : wrap;
     gap : 16px;
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
         flex-direction : column;
         order : 9999;
     }
 `
 
-export const FourthThirdFifthWrapper = styled.div`
+export const RightSection = styled.div`
     display : flex;
-    flex-direction : column;
     gap : 16px;
-    @media screen and (max-width : 574px){
+    width : 670px;
+    flex-wrap : wrap;
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
         order : 9999;
     }
 `
-export const FirstFourthThirdFifthWrapper = styled.div`
+export const IndexPageMenu = styled.div`
     display : flex;
+    width : 1156px;
     gap : 16px;
     flex-wrap : wrap;
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
         flex-direction : column;
         margin : 0 auto;
@@ -83,7 +88,7 @@ export const MainMenuBrowserWrapper = styled.div`
     width : 1146px;
     margin : 0 auto;
     margin-bottom : 90px;
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
     }
 `

@@ -1,9 +1,10 @@
 import styled from 'styled-components'
-import '../../../assets/fonts/font.css'
+import '../../assets/fonts/font.css'
+import {UnfocusColor,SignatureColor, FocusColor, BaseColor, PlaceholderColor,MobileWidth} from '../../static/shared/commonStyle'
 export const LectureRankingWrapper = styled.div`
     width : 470px;
     height : 450px;
-    @media screen and (max-width:574px){
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
     } 
 `
@@ -11,8 +12,8 @@ export const RankingWrapper = styled.div`
     width : 464px;
     height : 396px;
     border-radius : 8px;
-    border : solid 1px #eeeeee;
-    @media screen and (max-width : 574px){
+    border : solid 1px ${BaseColor};
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
     }
 `
@@ -20,7 +21,7 @@ export const ComponentName = styled.div`
     font-family : NotoSansKRLight;
     font-size : 16px;
     margin-bottom : 16px;
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         font-size : 16px;
     }
 `
@@ -33,25 +34,27 @@ export const DepartmentSelector = styled.ul`
     height : 42px;
     font-size : 12px;
     list-style : none;
-    border-bottom : 1px solid #eeeeee;
-    @media screen and (max-width : 574px){
+    border-bottom : 1px solid ${BaseColor};
+    @media screen and (max-width : ${MobileWidth}){
         width : 600px;
         font-size : 14px;
     }
 `
 export const LectureRankingHeader = styled.div`
-    @media screen and (max-width : 574px){
-        overflow : auto;
+    @media screen and (max-width : ${MobileWidth}){
+        overflow-x : auto;
     }
 `
 export const DepartmentName = styled.div`
     height : 40px;
+    width : 40px;
     display : flex;
     margin-bottom : ${props => props.isClicked?'-2px':'0'};
     align-items : center;
+    justify-content : center;
     cursor : pointer;
-    color : ${props => props.isClicked?'#238bfe':'#999999'};
-    border-bottom : ${props => props.isClicked?'#ffab2e 2px solid':''}
+    color : ${props => props.isClicked?SignatureColor:PlaceholderColor};
+    border-bottom : ${props => props.isClicked? FocusColor:'none'} 2px solid;
 `
 
 export const LectureWrapper = styled.ul`
@@ -67,7 +70,7 @@ export const LectureWrapper = styled.ul`
 export const LectureContainer = styled.li`
     width : 100%;
     height : 20%;
-    border-bottom : 1px solid #eeeeee;
+    border-bottom : 1px solid ${BaseColor};
     &:last-child{
         border-bottom: 0px;
     }
@@ -80,13 +83,13 @@ export const Lecture = styled.div`
     justify-content : space-between;
     align-items : center;
 `
-export const LectureNameAndProfessor = styled.div`
+export const LectureInformaion = styled.div`
     display : flex;
     flex-direction : column;
 `
 export const Professor = styled.span`
     font-size : 12px;
-    color : #828282;
+    color : ${UnfocusColor};
 `
 export const AverageScore = styled.div`
     font-size : 18px;
@@ -94,9 +97,9 @@ export const AverageScore = styled.div`
 export const LectureOrder = styled.div`
     display : flex;
     font-size : 18px;
-    color : #238bfe;
+    color : ${SignatureColor};
     margin-right:24px;
 `
-export const LectureAndOrder =styled.div`
+export const LectureContent =styled.div`
     display : flex;
 `

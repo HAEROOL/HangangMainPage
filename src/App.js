@@ -1,10 +1,11 @@
 import Banner from './component/Banner/Banner'
 import styled from 'styled-components';
-import MainPage from './pages/MainPage';
+import IndexPage from './pages/IndexPage/IndexPage';
 import MainPageFooter from './component/Footer/MainPageFooter'
 import './assets/fonts/font.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route, Switch} from 'react-router-dom';
 import TestComp from './test';
+import { MobileWidth } from './static/shared/commonStyle';
 const TotalPage = styled.div`
   display : flex;
   flex-direction : column;
@@ -12,20 +13,24 @@ const TotalPage = styled.div`
   font-family : NotoSansKRLight;
   margin : 0 auto;
   min-width : 1280px;
-  @media screen and (max-width : 574px){
+  @media screen and (max-width : ${MobileWidth}){
     min-width : 300px;
   }
 `
 function App() {
   return (
       <TotalPage>
-        <Router>
-          <Banner/>
-          <Route exact path='/' component={MainPage}/>
-          <Route exact path='/dummy' component={TestComp}/>
-          <MainPageFooter/>
-        </Router>
-        
+        <Banner/>
+        <Switch>
+          <Route exact path='/' component={IndexPage}/>
+          <Route path='/lectures' component={TestComp}/>
+          <Route path='/resources' component={TestComp}/>
+          <Route path='/timetable' component={TestComp}/>
+          <Route path='/my' component={TestComp}/>
+          <Route path='/login' component={TestComp}/>
+          <Route path='/signup' component={TestComp}/>
+        </Switch>
+        <MainPageFooter/>
       </TotalPage>
 
   );

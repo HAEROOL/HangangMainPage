@@ -1,9 +1,13 @@
 import styled from 'styled-components'
-
+import {NavLink} from 'react-router-dom'
+import { PlaceholderColor, SignatureColor, BaseColor,UnfocusColor, FontColor,MobileWidth } from '../../static/shared/commonStyle'
+export const StyledLink = styled(NavLink)`
+    text-decoration : none;
+`
 export const TimeTableWrapper = styled.div`
     width : 370px;
     height : 318px;
-    @media screen and (max-width:574px){
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
     }
 `
@@ -17,10 +21,10 @@ export const LectureList = styled.ul`
     padding : 0;
     list-style : none;
     border-radius : 8px;
-    border : solid 1px #eeeeee;
+    border : solid 1px ${BaseColor};
     text-align : center;
     font-size : 12px;
-    color : #999999;
+    color : ${PlaceholderColor};
 `
 export const LectureNameAndProfessor = styled.div`
     display : flex;
@@ -33,15 +37,15 @@ export const Lecture = styled.li`
     align-items : center;
     font-size : 14px;
     margin : 0 auto;
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         font-size : 14px;
         padding : 0;
     }
 `
 export const Professor = styled.span`
     font-size : 12px;
-    color : #828282;
-    @media screen and (max-width:574px){
+    color : ${UnfocusColor};
+    @media screen and (max-width : ${MobileWidth}){
         font-size : 12px;
     }
 `
@@ -52,9 +56,9 @@ export const EvaluationButton = styled.div`
     width : 60px;
     height : 28px;
     border-radius : 20px;
-    background : ${props => props.isClicked?'#eeeeee':'#238bfe'};
+    background : ${props => props.isClicked?BaseColor:SignatureColor};
     font-size : 12px;
-    color : ${props => props.isClicked?'#999999':'#ffffff'};
+    color : ${props => props.isClicked?PlaceholderColor:'white'};
     cursor : pointer;
 `
 export const ComponentName = styled.div`
@@ -62,25 +66,30 @@ export const ComponentName = styled.div`
     font-size : 16px;
     text-align : left;
     margin-bottom : 16px;
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         width : 90%;
         margin : 0;
         margin-bottom : 16px;
     }
 `
-export const GoTimeTableButton = styled.div`
+export const GoTimeTableButton = styled.button`
     display : flex;
     justify-content : center;
+    font : inherit;
     align-items : center;
     margin : 0 auto;
     margin-top : 6px;
     width : 109px;
     height : 28px;
     border-radius : 20px;
-    background-color : #eeeeee;
+    background-color : ${BaseColor};
     font-size : 12px;
-    color : #222222;
-    @media screen and (max-width : 574px){
+    color : ${FontColor};
+    border : none;
+    box-shadow:none;
+    padding:0;
+    cursor : pointer;
+    @media screen and (max-width : ${MobileWidth}){
         font-size : 12px;
     }
 `
@@ -89,9 +98,9 @@ export const NoTimeTable = styled.div`
     justify-content : space-between;
     align-items : center;
     font-size : 12px;
-    color : #828282;
+    color : ${UnfocusColor};
     margin : 0 auto;
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         font-size : 12px;
     }
 `

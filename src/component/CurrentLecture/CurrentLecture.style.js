@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { BaseColor,UnfocusColor,MobileWidth } from '../../static/shared/commonStyle'
 export const CurrentLectureWrapper = styled.div`
     width : 274px;
     height : 318px;
-    @media screen and (max-width:574px){
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
     }
 `
@@ -15,12 +16,12 @@ export const LectureList = styled.ul`
     flex-direction : column;
     list-style : none;
     border-radius : 8px;
-    border : solid 1px #eeeeee;
-    @media screen and (max-width:574px){
+    border : solid 1px ${BaseColor};
+    @media screen and (max-width : ${MobileWidth}){
         width : 100%;
     }
 `
-export const LectureNameAndProfessor = styled.div`
+export const LectureInformaion = styled.div`
     display : flex;
     flex-direction : column;
 `
@@ -35,7 +36,7 @@ export const Lecture = styled.li`
 `
 export const Professor = styled.span`
     font-size : 12px;
-    color : #828282;
+    color : ${UnfocusColor};
 `
 export const AverageScore = styled.div`
     font-size : 18px;
@@ -45,7 +46,7 @@ export const ComponentName = styled.div`
     font-size : 16px;
     text-align : left;
     margin-bottom : 16px;
-    @media screen and (max-width : 574px){
+    @media screen and (max-width : ${MobileWidth}){
         width : 90%;
         margin : 0;
         margin-bottom : 16px;
